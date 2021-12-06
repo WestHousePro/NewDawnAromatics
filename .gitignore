@@ -1,0 +1,21 @@
+# OS generated files #
+######################
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+ehthumbs.db
+Thumbs.db
+
+# Exclude env vars and custom deployment scripts
+.env
+deploy.*
+
+# Keep gitkeep files
+# This will make sure an empty directory has at least one file so it can be tracked by git
+!**/.gitkeep
+
+# npm
+node_modules
