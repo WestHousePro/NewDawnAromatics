@@ -1,0 +1,281 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
+
+body {
+  box-sizing: border-box;
+  background-color: #f3f2f2;
+  font-size: 1.6rem; }
+
+ul {
+  list-style: none;
+  /* Remove default bullets */ }
+
+ul li::before {
+  content: "\2022";
+  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #27ae60;
+  /* Change the color */
+  font-weight: bold;
+  /* If you want it to be bold */
+  display: inline-block;
+  /* Needed to add space between the bullet and the text */
+  width: 1.3rem;
+  /* Also needed for space (tweak if needed) */
+  margin-left: 0;
+  /* Also needed for space (tweak if needed) */ }
+
+.row {
+  max-width: 114rem;
+  margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 6rem; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row [class^="col-"] {
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 6rem; }
+  .row .col-1-of-2 {
+    width: calc((100% - 6rem) / 2); }
+  .row .col-1-of-3 {
+    width: calc((100% - 2 * 6rem) / 3); }
+  .row .col-2-of-3 {
+    width: calc( 2 * ((100% - 2 * 6rem) / 3) + 6rem); }
+  .row .col-1-of-4 {
+    width: calc((100% - 3 * 6rem) / 4); }
+  .row .col-2-of-4 {
+    width: calc( 2 * ((100% - 3 * 6rem) / 4) + 6rem); }
+  .row .col-3-of-4 {
+    width: calc( 3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #666; }
+
+.header-heading-primary {
+  color: #f7f7f7;
+  text-transform: uppercase;
+  backface-visibility: hidden; }
+  .header-heading-primary--main {
+    display: block;
+    font-size: 5rem;
+    font-weight: 400;
+    letter-spacing: 3rem; }
+  .header-heading-primary--sub {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 400;
+    letter-spacing: 1.5rem; }
+
+.heading-primary {
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  padding-top: 4.3rem;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 400;
+  word-spacing: 1rem; }
+
+.heading-secondary {
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin: 1rem;
+  text-align: center;
+  font-size: 2rem;
+  border-bottom: 1px solid #666; }
+
+.header {
+  display: grid;
+  grid-gap: 6rem;
+  grid-template-columns: 1fr 3fr 3fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/main-background.jpg);
+  background-size: cover;
+  background-position: top; }
+  .header__logo-box {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin-top: 4rem;
+    margin-left: 4rem; }
+  .header__logo {
+    height: 18rem; }
+  .header__text-box {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    justify-self: center;
+    align-self: end;
+    text-align: center; }
+  .header_button1 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    justify-self: end;
+    align-self: start; }
+  .header_button2 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    justify-self: start;
+    align-self: start; }
+
+.btn, .btn:link, .btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  border-radius: 10rem;
+  transition: all 0.2s;
+  position: relative;
+  font-size: 1.6rem;
+  border: 0.1rem solid #27ae60; }
+
+.btn:hover, .btn:active {
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+  background-color: #36d278;
+  border: 1px solid #36d278; }
+
+.btn:hover {
+  transform: translateY(-0.3rem); }
+
+.btn:active {
+  transform: translateY(0rem); }
+
+.btn--green:link, .btn--green:visited {
+  background-color: #27ae60;
+  color: #f7f7f7; }
+
+.btn--green:hover, .btn--green:active {
+  background-color: #36d278; }
+
+.btn--white:link, .btn--white:visited {
+  color: #27ae60; }
+
+.btn--white:hover, .btn--white:active {
+  color: #f7f7f7; }
+
+.section-works {
+  background-color: #f3f2f2;
+  padding-bottom: 6rem; }
+  .section-works_container {
+    display: grid;
+    width: 114rem;
+    grid-gap: 6rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto 1fr auto;
+    margin: 0 auto; }
+  .section-works_heading {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2; }
+  .section-works_infobox {
+    background-color: #f7f7f7;
+    text-align: left;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+    padding: 2rem; }
+  .section-works_subheading {
+    color: #27ae60; }
+  .section-works_button1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    justify-self: end; }
+  .section-works_button2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    justify-self: start; }
+
+.section-about {
+  background-color: #eee;
+  padding-bottom: 6rem;
+  display: grid;
+  grid-gap: 6rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+  justify-items: center; }
+  .section-about_heading {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2; }
+  .section-about_box {
+    display: grid;
+    width: 114rem;
+    grid-gap: 6rem;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr;
+    background-color: #f7f7f7;
+    text-align: left;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+    padding: 2rem; }
+  .section-about_image {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    align-self: center; }
+  .section-about_text {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4; }
+  .section-about_paragraph {
+    margin-top: 1rem; }
+  .section-about_certs {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2; }
+  .section-about_contact {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3; }
+  .section-about_icons {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    align-self: end; }
+  .section-about #section-about_more {
+    color: #27ae60;
+    cursor: pointer; }
+  .section-about #more,
+  .section-about #moreSecond {
+    display: none; }
+  .section-about_arrow {
+    font-size: 2rem; }
+  .section-about_naha {
+    width: 14rem; }
+  .section-about_email {
+    text-decoration: none; }
+  .section-about_emailaddress {
+    font-size: 1.2rem; }
+  .section-about_icon {
+    width: 4rem;
+    margin-right: 2rem; }
+
+.photo_headshot {
+  width: 100%; }

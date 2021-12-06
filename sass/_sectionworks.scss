@@ -1,0 +1,47 @@
+.section-works {
+  background-color: $color-grey-light-2;
+  padding-bottom: 6rem;
+
+  &_container {
+    display: grid;
+    width: $grid-width;
+    grid-gap: $gutter-gap;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto 1fr auto;
+    margin: 0 auto;
+  }
+
+  &_heading {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  &_infobox {
+    background-color: $color-grey-light-1;
+    text-align: left;
+    box-shadow: $box-shadow;
+    padding: 2rem;
+  }
+
+  &_subheading {
+    color: $color-primary;
+  }
+
+  &_button1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    justify-self: end;
+  }
+
+  &_button2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    justify-self: start;
+  }
+}
