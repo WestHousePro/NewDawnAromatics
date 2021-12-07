@@ -11,12 +11,13 @@ body {
   color: $color-grey-light-1;
   text-transform: uppercase;
   backface-visibility: hidden;
-  //BUG See about centering Main/Sub better
+
   &--main {
     display: block;
     font-size: 5rem;
     font-weight: 400;
     letter-spacing: 3rem;
+    animation: fadeIn ease 1.5s;
   }
 
   &--sub {
@@ -46,5 +47,4 @@ body {
   margin: 1rem;
   text-align: center;
   font-size: 2rem;
-  border-bottom: 1px solid $color-grey-dark-1;
 }

@@ -16,3 +16,24 @@ function readMore() {
     moreTextSecond.style.display = "inline";
   }
 }
+
+// TODO - ADD MOBILE TOUCH EVENT
+
+function navMenu() {
+  const openMenu = document.getElementById("header_menuopen");
+  const closeMenu = document.getElementById("header_menuclose");
+  const menuBox = document.getElementById("header_menu");
+
+  if (closeMenu.style.display === "none") {
+    menuBox.style.display = "inline";
+    closeMenu.style.display = "inline";
+    openMenu.style.display = "none";
+    window.addEventListener("mouseup", function (event) {
+      if (event.target !== menuBox) {
+        menuBox.style.display = "none";
+        closeMenu.style.display = "none";
+        openMenu.style.display = "inline";
+      }
+    });
+  }
+}

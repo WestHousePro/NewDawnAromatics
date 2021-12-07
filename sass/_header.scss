@@ -1,7 +1,7 @@
 .header {
   display: grid;
   grid-gap: $gutter-gap;
-  grid-template-columns: 1fr 3fr 3fr 1fr;
+  grid-template-columns: 2fr 3fr 3fr 2fr;
   grid-template-rows: repeat(2, 1fr);
   height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -14,8 +14,8 @@
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 2;
-    margin-top: 4rem;
-    margin-left: 4rem;
+    margin-top: 6rem;
+    margin-left: 6rem;
   }
 
   &__logo {
@@ -39,6 +39,7 @@
     grid-row-end: 3;
     justify-self: end;
     align-self: start;
+    animation: fadeInButtons ease 2s;
   }
 
   &_button2 {
@@ -48,5 +49,55 @@
     grid-row-end: 3;
     justify-self: start;
     align-self: start;
+    animation: fadeInButtons ease 2s;
   }
+
+  &__nav {
+    justify-self: end;
+    position: fixed;
+    margin-right: 6rem;
+    margin-top: 6rem;
+
+    &_open,
+    &_close {
+      position: relative;
+      width: 6rem;
+      z-index: 99;
+      cursor: pointer;
+    }
+
+    &_menu {
+      position: absolute;
+      width: 20rem;
+      height: auto;
+      left: -17rem;
+      top: 3rem;
+      background-color: $color-primary;
+      z-index: 10;
+      opacity: 95%;
+
+      &_list {
+        padding: 2rem;
+        &:hover {
+          background-color: $color-primary-light;
+        }
+
+        &_border {
+          border-bottom: 2px solid rgba($color-grey-dark-1, 0.75);
+        }
+      }
+
+      &_item {
+        color: $color-grey-light-1;
+      }
+    }
+  }
+}
+
+#header_menuclose {
+  display: none;
+}
+
+#header_menuopen {
+  display: inline;
 }

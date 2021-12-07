@@ -11,7 +11,6 @@
     position: relative;
     font-size: $default-font-size;
     border: 0.1rem solid $color-primary;
-    // margin-bottom: 6rem;
   }
 
   &:hover,
@@ -37,7 +36,8 @@
     }
     &:hover,
     &:active {
-      background-color: $color-primary-light;
+      background-color: $color-secondary;
+      border: 0.1rem solid $color-secondary;
     }
   }
 

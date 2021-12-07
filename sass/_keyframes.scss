@@ -1,0 +1,36 @@
+@keyframes fadeInButtons {
+  0% {
+    opacity: 0;
+    transform: translateX(-8rem);
+  }
+  25% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+    transform: translateX(-8rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    font-size: 5rem;
+    opacity: 0;
+  }
+  25% {
+    font-size: 5rem;
+    opacity: 0;
+  }
+  75% {
+    font-size: 7.5rem;
+    opacity: 0.5;
+  }
+  100% {
+    font-size: 5rem;
+    opacity: 1;
+  }
+}

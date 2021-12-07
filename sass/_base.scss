@@ -18,8 +18,13 @@ body {
   font-size: $default-font-size;
 }
 
-ul {
+ul,
+ol {
   list-style: none; /* Remove default bullets */
+}
+
+a {
+  text-decoration: none;
 }
 
 ul li::before {
@@ -27,6 +32,6 @@ ul li::before {
   color: $color-primary; /* Change the color */
   font-weight: bold; /* If you want it to be bold */
   display: inline-block; /* Needed to add space between the bullet and the text */
-  width: 1.3rem; /* Also needed for space (tweak if needed) */
-  margin-left: 0; /* Also needed for space (tweak if needed) */
+  width: 1.3rem; /* Also needed for space */
+  margin-left: 0; /* Also needed for space */
 }

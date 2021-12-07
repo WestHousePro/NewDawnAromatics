@@ -63,6 +63,43 @@
       <a href="#howItWorks" class="btn btn--white header_button2"
         >How it works</a
       >
+      <div class="header__nav">
+          <img
+            onclick="navMenu()"
+            src="img/icon-menuopen.svg"
+            alt="Open Menu"
+            class="header__nav_open"
+            id="header_menuopen"
+            style="display: inline"
+          />
+          <img
+            src="img/icon-menuclose.svg"
+            alt="Close Menu"
+            class="header__nav_close"
+            id="header_menuclose"
+            style="display: none"
+          />
+        <nav class="header__nav_menu" id="header_menu" style="display: none">
+          <ol>
+            <a href="#" class="header__nav_menu_item">
+              <li class="header__nav_menu_list header__nav_menu_list_border">Home</li></a
+            >
+            <a href="#" class="header__nav_menu_item">
+              <li class="header__nav_menu_list header__nav_menu_list_border">Consultation</li></a
+            >
+            <a href="#" class="header__nav_menu_item">
+              <li class="header__nav_menu_list header__nav_menu_list_border">How it Works</li></a
+            >
+            <a href="#" class="header__nav_menu_item">
+              <li class="header__nav_menu_list header__nav_menu_list_border">About Me</li></a
+            >
+            <a href="#" class="header__nav_menu_item">
+              <li class="header__nav_menu_list">Blog</li></a
+            >
+            </li>
+          </ol>
+        </nav>
+      </div>
     </header>
     <section class="section-works">
       <div class="section-works_container">
@@ -94,32 +131,49 @@
           <div class="heading-secondary section-works_subheading">
             Education
           </div>
-          - I am passionate about the healing power of essential oils, and want
-          you to get the most out of your treatment protocol. During our
-          consultation I will spend time discussing - <br />
+          <ul>
+            <li>
+              I am passionate about the healing power of essential oils, and
+              want you to get the most out of your treatment protocol. During
+              our consultation I will spend time discussing:
+            </li>
 
-          - Benefits of essential oils<br />
-          - Using essential oils safely<br />
-          - Treatment expectations<br />
-          - Holistic approach to your healthcare
+            <li>Benefits of essential oils</li>
+            <li>Using essential oils safely</li>
+            <li>Treatment expectations</li>
+            <li>Holistic approach to your healthcare</li>
+          </ul>
         </div>
         <div class="section-works_infobox">
           <div class="heading-secondary section-works_subheading">
             Custom Blends
           </div>
-          - We all have a unique body chemistry and constitution, what may work
-          for one individual may not work for another.<br />
-          - I will work up a personalized treatment protocol with blends for
-          your specific needs. (Typically takes 2 days to formulate the blends)
+          <ul>
+            <li>
+              We all have a unique body chemistry and constitution, what may
+              work for one individual may not work for another.
+            </li>
+            <li>
+              I will work up a personalized treatment protocol with blends for
+              your specific needs. (Typically takes 2 days to formulate the
+              blends)
+            </li>
+          </ul>
         </div>
         <div class="section-works_infobox">
           <div class="heading-secondary section-works_subheading">
             Follow up
           </div>
-          - Since I’m committed to your long term wellbeing there will be a
-          short follow up visit via zoom 1- 2 weeks later at no charge.<br />
-          - For more complex situations we can schedule an in depth follow up
-          ($45 charge)
+          <ul>
+            <li>
+              Since I’m committed to your long term wellbeing there will be a
+              short follow up visit via zoom 1- 2 weeks later at no charge.
+            </li>
+            <li>
+              For more complex situations we can schedule an in depth follow up
+              ($45 charge)
+            </li>
+          </ul>
         </div>
         <a href="#" class="btn btn--green btn--green-main section-works_button1"
           >Book an Appointment</a
@@ -141,6 +195,9 @@
             class="photo_headshot"
           />
         </div>
+        <a href="tel:(770)335-5628" class="btn btn--green section-about_number"
+          >(770)335-5628</a
+        >
         <div class="section-about_text">
           <p>
             Hello my name is Michelle, thank you for visiting my site! I’m
@@ -195,38 +252,31 @@
             <li>Member of The American Herbalist Guild</li>
           </ul>
         </div>
-        <div class="section-about_contact">
-          <a
-            href="tel:(770)335-5628"
-            class="btn btn--green section-about_number"
-            >(770)335-5628</a
-          >
-          <div>
-            <a
-              href="mailto:balancedbodybymichelle@gmail.com"
-              class="section-about_email"
-              >Email Me</a
-            >
-            <p class="section-about_emailaddress">
-              balancedbodybymichelle@gmail.com
-            </p>
+        <div class="section-about_links">
+          <div class="section-about_contact"></div>
+          <div class="section-about_icons">
+            <a href="mailto:balancedbodybymichelle@gmail.com">
+              <img
+                src="img/icon-mail.svg"
+                alt="E-Mail Icon"
+                class="section-about_icon section-about_icon_mail"
+              />
+            </a>
+            <a href="https://www.facebook.com/balancedbodybymichelle">
+              <img
+                src="img/icon-facebook.svg"
+                alt="Facebook Icon"
+                class="section-about_icon section-about_icon_facebook"
+              />
+            </a>
+            <a href="https://www.youtube.com/channel/UCQNhPQ_ErNPKXLUr44VSEzg">
+              <img
+                src="img/icon-youtube.svg"
+                alt="Youtube Icon"
+                class="section-about_icon"
+              />
+            </a>
           </div>
-        </div>
-        <div class="section-about_icons">
-          <a href="https://www.facebook.com/balancedbodybymichelle">
-            <img
-              src="img/icon-facebook.svg"
-              alt="Facebook Icon"
-              class="section-about_icon"
-            />
-          </a>
-          <a href="https://www.youtube.com/channel/UCQNhPQ_ErNPKXLUr44VSEzg">
-            <img
-              src="img/icon-youtube.svg"
-              alt="Youtube Icon"
-              class="section-about_icon"
-            />
-          </a>
         </div>
       </div>
     </section>
