@@ -41,6 +41,16 @@ body {
   word-spacing: 1rem;
 }
 
+.heading-primary-long {
+  backface-visibility: hidden;
+  //Removing 1.7 line height
+  margin-top: 4.3rem;
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 400;
+  word-spacing: 1rem;
+}
+
 .heading-secondary {
   text-transform: uppercase;
   backface-visibility: hidden;
