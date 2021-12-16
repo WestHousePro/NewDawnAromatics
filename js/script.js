@@ -37,3 +37,7 @@ function navMenu() {
     });
   }
 }
+
+function submitNewsletter() {
+  document.querySelector(".subscription").classList.add("done");
+}
