@@ -1,0 +1,20 @@
+.footer {
+  background-color: $color-grey-dark-1;
+  padding-bottom: 6rem;
+  padding-top: 6rem;
+
+  &_container {
+    display: grid;
+    width: $grid-width;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: $gutter-gap;
+    grid-template-rows: auto;
+    margin: 0 auto;
+    justify-items: center;
+  }
+
+  &_boxes {
+    padding: 2rem;
+    color: $color-primary-light;
+  }
+}

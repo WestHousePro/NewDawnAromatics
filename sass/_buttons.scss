@@ -41,6 +41,19 @@
     }
   }
 
+  &--green_white {
+    &:link,
+    &:visited {
+      background-color: $color-primary;
+      color: $color-grey-light-1;
+    }
+    &:hover,
+    &:active {
+      background-color: $color-primary-light;
+      border: 0.1rem solid $color-primary-light;
+    }
+  }
+
   &--white {
     &:link,
     &:visited {

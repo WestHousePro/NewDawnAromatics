@@ -76,6 +76,7 @@
       background-color: $color-primary;
       z-index: 90;
       opacity: 95%;
+      animation: menuOpen ease-out 0.5s;
 
       &_list {
         padding: 2rem;

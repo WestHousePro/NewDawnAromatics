@@ -20,7 +20,8 @@ ol {
   /* Remove default bullets */ }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: inherit; }
 
 ul li::before {
   content: "\2022";
@@ -65,6 +66,14 @@ ul li::before {
 .btn--green:hover, .btn--green:active {
   background-color: #f6b519;
   border: 0.1rem solid #f6b519; }
+
+.btn--green_white:link, .btn--green_white:visited {
+  background-color: #27ae60;
+  color: #f7f7f7; }
+
+.btn--green_white:hover, .btn--green_white:active {
+  background-color: #36d278;
+  border: 0.1rem solid #36d278; }
 
 .btn--white:link, .btn--white:visited {
   color: #27ae60; }
@@ -133,7 +142,8 @@ ul li::before {
       top: 3rem;
       background-color: #27ae60;
       z-index: 90;
-      opacity: 95%; }
+      opacity: 95%;
+      animation: menuOpen ease-out 0.5s; }
       .header__nav_menu_list {
         padding: 2rem; }
         .header__nav_menu_list:hover {
@@ -148,6 +158,22 @@ ul li::before {
 
 #header_menuopen {
   display: inline; }
+
+.footer {
+  background-color: #666;
+  padding-bottom: 6rem;
+  padding-top: 6rem; }
+  .footer_container {
+    display: grid;
+    width: 114rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 6rem;
+    grid-template-rows: auto;
+    margin: 0 auto;
+    justify-items: center; }
+  .footer_boxes {
+    padding: 2rem;
+    color: #36d278; }
 
 @keyframes fadeInButtons {
   0% {
@@ -175,6 +201,14 @@ ul li::before {
   100% {
     font-size: 5rem;
     opacity: 1; } }
+
+@keyframes menuOpen {
+  0% {
+    opacity: 0;
+    height: 0%; }
+  100% {
+    opacity: 0.95;
+    height: 510%; } }
 
 .section-about {
   background-color: #eee;
@@ -255,8 +289,8 @@ ul li::before {
   .section-blog_container {
     display: grid;
     width: 114rem;
-    grid-template-columns: 4fr, 1fr;
-    grid-template-rows: 1fr, auto;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: auto 1fr;
     margin: 0 auto;
     background-color: #f3f2f2; }
   .section-blog_title {
@@ -265,19 +299,69 @@ ul li::before {
     grid-row-start: 1;
     grid-row-end: 2;
     justify-self: center;
-    padding-top: 2rem;
-    padding-bottom: 2rem; }
+    align-self: center;
+    padding: 2rem; }
   .section-blog_content {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 3;
-    background-color: #f7f7f7; }
+    background-color: #f7f7f7;
+    align-self: center;
+    padding: 2rem; }
+    .section-blog_content_photo {
+      width: 40rem;
+      border-radius: 50%;
+      float: left;
+      shape-outside: ellipse(40% 50%);
+      margin: 1rem 6rem 1rem 0rem; }
   .section-blog_moreblogs {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
-    grid-row-end: 3; }
+    grid-row-end: 3;
+    padding: 2rem;
+    align-self: center; }
+    .section-blog_moreblogs_list {
+      justify-self: center;
+      cursor: pointer; }
+      .section-blog_moreblogs_list_border {
+        padding-bottom: 2rem; }
+      .section-blog_moreblogs_list_photos {
+        width: 100%;
+        margin-bottom: 1rem;
+        border-radius: 50%; }
+      .section-blog_moreblogs_list_text {
+        font-size: 2rem;
+        color: #27ae60; }
+  .section-blog_buttons {
+    padding-top: 6rem;
+    text-align: center; }
+    .section-blog_buttons_button1 {
+      margin-right: 3rem; }
+    .section-blog_buttons_button2 {
+      margin-left: 3rem; }
+
+#section-blog_title_second {
+  display: none; }
+
+#section-blog_title_third {
+  display: none; }
+
+#section-blog_title_fourth {
+  display: none; }
+
+#section-blog_content_second {
+  display: none; }
+
+#section-blog_content_third {
+  display: none; }
+
+#section-blog_content_fourth {
+  display: none; }
+
+#section-blog_list_first {
+  display: none; }
 
 .section-newsletter {
   background-color: #f3f2f2;
@@ -409,21 +493,13 @@ ul li::before {
     margin-bottom: 1rem;
     border-radius: 50%; }
   .section-works_subheading {
-    color: #27ae60;
-    margin-top: 0;
-    border-bottom: 1px solid #eee, 1; }
+    color: #27ae60; }
   .section-works_button1 {
     grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    justify-self: end; }
-  .section-works_button2 {
-    grid-column-start: 3;
     grid-column-end: 5;
     grid-row-start: 2;
     grid-row-end: 3;
-    justify-self: start; }
+    justify-self: center; }
 
 body {
   font-family: "Lato", sans-serif;

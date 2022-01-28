@@ -34,3 +34,14 @@
     opacity: 1;
   }
 }
+
+@keyframes menuOpen {
+  0% {
+    opacity: 0;
+    height: 0%;
+  }
+  100% {
+    opacity: 0.95;
+    height: 510%;
+  }
+}
