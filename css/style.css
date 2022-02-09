@@ -213,6 +213,7 @@ ul li::before {
 .section-about {
   background-color: #eee;
   padding-bottom: 6rem;
+  padding-top: 6rem;
   display: grid;
   grid-gap: 6rem;
   grid-template-columns: 1fr;
