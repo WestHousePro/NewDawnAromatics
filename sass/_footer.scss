@@ -1,5 +1,5 @@
 .footer {
-  background-color: $color-grey-dark-1;
+  background-color: $color-grey-dark-2;
   padding-bottom: 6rem;
   padding-top: 6rem;
 
@@ -14,7 +14,10 @@
   }
 
   &_boxes {
-    padding: 2rem;
-    color: $color-primary-light;
+    color: $color-grey-light-1;
+  }
+
+  &_boxes_text:hover {
+    color: $color-black;
   }
 }

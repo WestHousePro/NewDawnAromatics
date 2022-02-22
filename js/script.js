@@ -1,6 +1,27 @@
 function originalDisplay() {
   document.getElementById("section-blog_content_first").style.display =
     "inline-block";
+  document.getElementById("disclaimer_popup").style.visibility = 'hidden';
+  document.getElementById("consultation_popup").style.visibility = 'hidden';
+}
+
+function consultationPopup() {
+  const openPopup = document.getElementById("consultation_popup");
+    openPopup.style.visibility = 'visible';
+    openPopup.style.opacity = 1;
+
+    window.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape') {
+        openPopup.style.visibility = 'hidden';
+        openPopup.style.opacity = 0;
+      }
+    });
+}
+
+function consultationPopupClose() {
+  const closePopup = document.getElementById("consultation_popup");
+  closePopup.style.visibility = 'hidden';
+  closePopup.style.opacity = 0;
 }
 
 function readMore() {
@@ -41,6 +62,25 @@ function navMenu() {
       }
     });
   }
+}
+
+function disclaimerPopup() {
+  const openPopup = document.getElementById("disclaimer_popup");
+    openPopup.style.visibility = 'visible';
+    openPopup.style.opacity = 1;
+
+    window.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape') {
+        openPopup.style.visibility = 'hidden';
+        openPopup.style.opacity = 0;
+      }
+    });
+}
+
+function disclaimerPopupClose() {
+  const closePopup = document.getElementById("disclaimer_popup");
+  closePopup.style.visibility = 'hidden';
+  closePopup.style.opacity = 0;
 }
 
 function submitNewsletter() {

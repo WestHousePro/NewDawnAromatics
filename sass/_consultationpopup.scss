@@ -1,0 +1,45 @@
+.section-consultation {
+    position: relative;
+    
+    &_popup{
+        width: $grid-width*.8;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 1fr auto;
+        position:fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 60;
+        color:$color-grey-light-3;
+        overflow:auto;
+        opacity: 0;
+        background-image: linear-gradient(to right, rgba($color-grey-dark-1, 0) 48%, rgba($color-secondary, 1) 50%, rgba($color-primary-light, .5) 52%, rgba($color-primary-light, .5)),
+        url(../img/treesbackground1.jpg);
+        background-size: cover;
+        background-position: bottom;
+    }
+
+    &_forms{
+        padding: 4rem;
+
+        &_title {
+
+        }
+    }
+
+    &_form {
+
+        width: 100%;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        padding: 1rem;
+    }
+
+    &_info{
+
+        padding: 4rem;
+    }
+}
+
+// linear-gradient(to left, #333, #333 50%, #eee 75%, #333 75%);
