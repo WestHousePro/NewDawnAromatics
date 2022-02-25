@@ -81,6 +81,42 @@ ul li::before {
 .btn--white:hover, .btn--white:active {
   color: #f7f7f7; }
 
+.btn-small, .btn-small:link, .btn-small:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1rem 1rem;
+  display: inline-block;
+  border-radius: 1rem;
+  transition: all 0.2s;
+  position: relative;
+  font-size: 1.6rem;
+  border: 0.1rem solid #27ae60; }
+
+.btn-small:hover, .btn-small:active {
+  box-shadow: 0 1rem 2rem rgba(10, 10, 10, 0.3);
+  background-color: #36d278;
+  border: 1px solid #36d278; }
+
+.btn-small:hover {
+  transform: translateY(-0.3rem); }
+
+.btn-small:active {
+  transform: translateY(0rem); }
+
+.btn-small--green {
+  background-color: #27ae60;
+  color: #f7f7f7; }
+  .btn-small--green:hover, .btn-small--green:active {
+    background-color: #f6b519;
+    border: 0.1rem solid #f6b519; }
+
+.btn-small--green_white {
+  background-color: #27ae60;
+  color: #f7f7f7; }
+  .btn-small--green_white:hover, .btn-small--green_white:active {
+    background-color: #36d278;
+    border: 0.1rem solid #36d278; }
+
 .section-consultation {
   position: relative; }
   .section-consultation_popup {
@@ -98,16 +134,74 @@ ul li::before {
     opacity: 0;
     background-image: linear-gradient(to right, rgba(102, 102, 102, 0) 48%, #f6b519 50%, rgba(54, 210, 120, 0.5) 52%, rgba(54, 210, 120, 0.5)), url(../img/treesbackground1.jpg);
     background-size: cover;
-    background-position: bottom; }
+    background-position: bottom;
+    overflow: auto; }
+  .section-consultation_form_title {
+    padding-top: 2rem;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    justify-self: center;
+    align-self: center; }
   .section-consultation_forms {
-    padding: 4rem; }
+    padding: 2rem 4rem;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    justify-self: center;
+    align-self: center; }
+  .section-consultation_btn {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    justify-self: center;
+    align-self: center;
+    margin-bottom: 2rem; }
   .section-consultation_form {
     width: 100%;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    padding: 1rem; }
-  .section-consultation_info {
-    padding: 4rem; }
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: #f7f7f7;
+    outline: none; }
+    .section-consultation_form:focus {
+      border: 3px solid #27ae60; }
+  .section-consultation_checkbox {
+    margin-bottom: 2rem; }
+    .section-consultation_checkbox_box {
+      margin-right: 2rem;
+      width: 2rem;
+      height: 2rem; }
+  .section-consultation_info_title {
+    padding-top: 2rem;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    justify-self: center;
+    align-self: center; }
+  .section-consultation_text {
+    padding: 2rem 4rem;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    justify-self: center;
+    align-self: center; }
+    .section-consultation_text_line {
+      margin-bottom: 4rem; }
+  .section-consultation_btn2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    justify-self: center;
+    align-self: center;
+    margin-bottom: 2rem; }
 
 .header {
   display: grid;

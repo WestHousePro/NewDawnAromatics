@@ -44,7 +44,7 @@
     <meta name="theme-color" content="#ffffff" />
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="Home">
       <div class="header__logo-box">
         <img
           src="img/michelle_logo_named_144ppi.png"
@@ -59,8 +59,8 @@
           <span class="header-heading-primary--sub">aromatic medicine</span>
         </h1>
       </div>
-      <a href="#" class="btn btn--green header_button1" onclick="consultationPopup()">Consultation</a>
-      <a href="#howItWorks" class="btn btn--white header_button2"
+      <a href="javascript:;" class="btn btn--green header_button1" onclick="consultationPopup()">Consultation</a>
+      <a href="#HowItWorks" class="btn btn--white header_button2"
         >How it works</a
       >
       <div class="header__nav">
@@ -81,27 +81,22 @@
           />
         <nav class="header__nav_menu" id="header_menu" style="display: none">
           <ol>
-            <a href="#" class="header__nav_menu_item">
-              <li class="header__nav_menu_list header__nav_menu_list_border">Home</li></a
-            >
-            <a href="#" class="header__nav_menu_item">
-              <li class="header__nav_menu_list header__nav_menu_list_border">Consultation</li></a
-            >
-            <a href="#" class="header__nav_menu_item">
-              <li class="header__nav_menu_list header__nav_menu_list_border">How it Works</li></a
-            >
-            <a href="#" class="header__nav_menu_item">
-              <li class="header__nav_menu_list header__nav_menu_list_border">About Me</li></a
-            >
-            <a href="#" class="header__nav_menu_item">
-              <li class="header__nav_menu_list">Blog</li></a
-            >
+            <a href="#Home" class="header__nav_menu_item">
+              <li class="header__nav_menu_list header__nav_menu_list_border">Home</li></a>
+            <a href="javascript:;" class="header__nav_menu_item" onclick="consultationPopup()">
+              <li class="header__nav_menu_list header__nav_menu_list_border">Consultation</li></a>
+            <a href="#HowItWorks" class="header__nav_menu_item">
+              <li class="header__nav_menu_list header__nav_menu_list_border">How it Works</li></a>
+            <a href="#AboutMe" class="header__nav_menu_item">
+              <li class="header__nav_menu_list header__nav_menu_list_border">About Me</li></a>
+            <a href="#HomeBlog" class="header__nav_menu_item">
+              <li class="header__nav_menu_list">Blog</li></a>
             </li>
           </ol>
         </nav>
       </div>
     </header>
-    <section class="section-works" id="howItWorks">
+    <section class="section-works" id="HowItWorks">
         <div class="section-works_leadin">
           <h1
             class="heading-primary-long section-works_heading"
@@ -175,7 +170,7 @@
             </li>
           </ul>
         </div>
-        <a href="#" class="btn btn--green btn--green-main section-works_button1"
+        <a href="javascript:;" class="btn btn--green btn--green-main section-works_button1" onclick="consultationPopup()"
           >Book an Appointment</a
         >
         <!-- <a href="#" class="btn btn--white section-works_button2"
@@ -183,7 +178,7 @@
         > -->
       </div>
     </section>
-    <section class="section-about">
+    <section class="section-about" id="AboutMe">
       <h1 class="heading-primary-long">Get to know your Aromatherapist
       </h1>
       <div class="section-about_box">
@@ -286,7 +281,7 @@
             alt="Faded Trees"
             class="section-newsletter_image"
           />
-        <div class="section-newsletter_content">
+        <div class="section-newsletter_content" id="Newsletter">
          <h1 class="heading-primary-long">Get your weekly dose of nature</h1>
           <p class="section-newsletter_text"> Learn about plants and essential oils. Tips, news, and recipes delivered right to your inbox!
           </p>
@@ -304,7 +299,7 @@
       </div>
     </section>
     <section class="section-blog">
-      <div class="section-blog_container">
+      <div class="section-blog_container" id="HomeBlog">
         <div class="section-blog_title heading-primary-long" id="section-blog_title_first">
           Why see a Clinical Aromatherapist?
         </div>
@@ -439,9 +434,9 @@
         </div>
       </div>
         <div class="section-blog_buttons">
-          <a href="#" class="btn btn--green_white section-blog_buttons_button1"
-            >Learn More</a>
-          <a href="#" class="btn btn--green section-blog_buttons_button2"
+          <!-- <a href="#" class="btn btn--green_white section-blog_buttons_button1"
+            >Learn More</a> -->
+          <a href="javascript:;" class="btn btn--green section-blog_buttons_button2" onclick="consultationPopup()"
             >Contact me</a>
         </div>
     </section>
@@ -450,15 +445,15 @@
         <div class="footer_boxes footer_boxes_firstline">
           <ol>
             <li class="footer_boxes_text">
-              <a href="#">
+              <a href="#Home">
               Home</a>
             </li>
             <li class="footer_boxes_text">
-              <a href="#">
+              <a href="#HowItWorks">
               How it works</a>
             </li>
             <li class="footer_boxes_text">
-              <a href="#">
+              <a href="#AboutMe">
               About me</a>
             </li>
           </ol>
@@ -466,15 +461,15 @@
         <div class="footer_boxes footer_boxes_secondline">
           <ol>
             <li class="footer_boxes_text">
-              <a href="#">
+              <a href="#Newsletter">
               Newsletter</a>
             </li>
             <li class="footer_boxes_text">
-              <a href="#">
+              <a href="javascript:;" class="header__nav_menu_item" onclick="consultationPopup()">
               Consultation</a>
             </li>
             <li class="footer_boxes_text">
-              <a href="#">
+              <a href="#HomeBlog">
               Blog</a>
             </li>
           </ol>
@@ -534,27 +529,31 @@
     </section>
     <section class="section-consultation">
       <div id="consultation_popup" class="section-consultation_popup">
+        <h1 class="section-consultation_form_title">Take a step towards better health!</h1>
         <div class="section-consultation_forms">
-          <h1 class="section-consultation_forms_title">Consultation</h1>
-          <form action="#">
-            <input class="section-consultation_form" placeholder="Name" type="text" required />
+          <form id="ConsultationForm" action="#">
+            <input class="section-consultation_form" placeholder="Your Name" type="text" required />
             <input class="section-consultation_form" placeholder="Email" type="email" required />
             <input class="section-consultation_form" placeholder="Phone Number" type="tel" required />
-            <textarea class="section-consultation_form" placeholder="Comment"></textarea>
-            <span>Sign up for our Newsletter!</span> <input type="checkbox" />
-            <input class="section-consultation_submit" type="submit" />
+            <textarea class="section-consultation_form" placeholder="Share With Us"></textarea>
+            <div class="section-consultation_checkbox">
+              <input class="section-consultation_checkbox_box" type="checkbox" />
+              <span>Sign up for our Newsletter!</span> 
+            </div>
           </form>
         </div>
-        <div class="section-consultation_info">
-          <h1 class="section-consultation_info_title">Details</h1>
-          <div>
-            <p>You will be contacted to set up a consultation time that best works for you.</p>
-            <p>1 Hour Consultation - $70</p>
-            <p>Consultations are currently conducted via zoom.</p>
-            <button onclick="consultationPopupClose()">Close</button>
+        <input form="ConsultationForm" class="btn-small btn-small--green section-consultation_btn" type="submit" />
+          <h1 class="section-consultation_info_title">What happens next?</h1>
+          <div class="section-consultation_text">
+            <p class="section-consultation_text_line">You will be contacted to set up a consultation time that best works for you.</p>
+            <p class="section-consultation_text_line">1 Hour Consultation - $70</p>
+            <p class="section-consultation_text_line">Consultations are currently conducted via zoom.</p>
+            <p class="section-consultation_text_line">Want to see if this is a good fit for you? Request a 15 minute complementary introduction so we can get to know each other.</p>
           </div>
-        </div>
+          <button class="btn-small btn-small--green-white section-consultation_btn2" onclick="consultationPopupClose()">Close</button>
       </div>
     </section>
   </body>
 </html>
+
+<!-- class="btn btn--green header_button1" class="btn btn--white header_button2" -->

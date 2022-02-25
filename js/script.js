@@ -5,6 +5,8 @@ function originalDisplay() {
   document.getElementById("consultation_popup").style.visibility = 'hidden';
 }
 
+// getElementsByClassName
+
 function consultationPopup() {
   const openPopup = document.getElementById("consultation_popup");
     openPopup.style.visibility = 'visible';
@@ -49,6 +51,9 @@ function navMenu() {
   const openMenu = document.getElementById("header_menuopen");
   const closeMenu = document.getElementById("header_menuclose");
   const menuBox = document.getElementById("header_menu");
+  const closePopup = document.getElementById("consultation_popup");
+  closePopup.style.visibility = 'hidden';
+  closePopup.style.opacity = 0;
 
   if (closeMenu.style.display === "none") {
     menuBox.style.display = "inline";
@@ -100,6 +105,7 @@ function blogSwitchFirst() {
   const secondList = document.getElementById("section-blog_list_second");
   const thirdList = document.getElementById("section-blog_list_third");
   // const fourthList = document.getElementById("section-blog_list_fourth");
+  window.location = '#HomeBlog';
 
   if (secondBlog.style.display === "inline-block") {
     secondBlog.style.display = "none";
@@ -138,6 +144,7 @@ function blogSwitchSecond() {
   const secondList = document.getElementById("section-blog_list_second");
   const thirdList = document.getElementById("section-blog_list_third");
   // // const fourthList = document.getElementById("section-blog_list_fourth");
+  window.location = '#HomeBlog';
 
   if (firstBlog.style.display === "inline-block") {
     firstBlog.style.display = "none";
@@ -176,6 +183,7 @@ function blogSwitchThird() {
   const secondList = document.getElementById("section-blog_list_second");
   const thirdList = document.getElementById("section-blog_list_third");
   // // const fourthList = document.getElementById("section-blog_list_fourth");
+  window.location = '#HomeBlog';
 
   if (firstBlog.style.display === "inline-block") {
     firstBlog.style.display = "none";
@@ -214,6 +222,7 @@ function blogSwitchThird() {
 //   const secondList = document.getElementById("section-blog_list_second");
 //   const thirdList = document.getElementById("section-blog_list_third");
 //   const fourthList = document.getElementById("section-blog_list_fourth");
+//   window.location = '#HomeBlog';
 
 //   if (firstBlog.style.display === "inline-block") {
 //     firstBlog.style.display = "none";
