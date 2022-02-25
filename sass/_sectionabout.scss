@@ -79,12 +79,22 @@
 
   //CORRECT TO &:not(:last-child) {margin-right: 4rem;}
   &_icon {
-    width: 4rem;
     &_facebook {
-      margin-right: 2rem;
+      margin-right: 4rem;
+      &:hover {
+        color: #4267B2;
+      }
     }
     &_mail {
-      margin-right: 2rem;
+      margin-right: 4rem;
+      &:hover {
+        color: $color-primary;
+      }
+    }
+    &_youtube {
+      &:hover {
+        color: #FF0000;
+      }
     }
   }
 
