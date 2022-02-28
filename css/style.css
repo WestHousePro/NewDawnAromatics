@@ -444,8 +444,12 @@ ion-icon {
       width: 40rem;
       border-radius: 50%;
       float: left;
-      shape-outside: ellipse(40% 50%);
+      shape-outside: ellipse(42% 48%);
       margin: 1rem 6rem 1rem 0rem; }
+    .section-blog_content_bullets {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; }
   .section-blog_moreblogs {
     grid-column-start: 2;
     grid-column-end: 3;

@@ -35,8 +35,14 @@
       width: 40rem;
       border-radius: 50%;
       float: left;
-      shape-outside: ellipse(40% 50%);
+      shape-outside: ellipse(42% 48%);
       margin: 1rem 6rem 1rem 0rem;
+    }
+
+    &_bullets {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
     }
   }
 
