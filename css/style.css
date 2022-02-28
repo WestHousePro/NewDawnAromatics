@@ -450,6 +450,8 @@ ion-icon {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between; }
+      .section-blog_content_bullets_item {
+        width: 50%; }
   .section-blog_moreblogs {
     grid-column-start: 2;
     grid-column-end: 3;

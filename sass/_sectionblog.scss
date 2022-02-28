@@ -43,6 +43,10 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
+
+      &_item{
+        width: 50%;
+      }
     }
   }
 
