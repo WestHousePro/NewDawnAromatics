@@ -299,7 +299,8 @@ ion-icon {
   .footer_boxes {
     color: #f7f7f7; }
   .footer_boxes_text:hover {
-    color: #0a0a0a; }
+    color: #0a0a0a;
+    cursor: pointer; }
 
 @keyframes fadeInButtons {
   0% {
@@ -394,15 +395,19 @@ ion-icon {
     grid-row-end: 3;
     align-self: center; }
   .section-about_icon_facebook {
-    margin-right: 4rem; }
+    margin-right: 3rem; }
     .section-about_icon_facebook:hover {
       color: #4267B2; }
   .section-about_icon_mail {
-    margin-right: 4rem; }
+    margin-right: 3rem; }
     .section-about_icon_mail:hover {
       color: #27ae60; }
-  .section-about_icon_youtube:hover {
-    color: #FF0000; }
+  .section-about_icon_youtube {
+    margin-right: 3rem; }
+    .section-about_icon_youtube:hover {
+      color: #FF0000; }
+  .section-about_icon_instagram:hover {
+    color: #833AB4; }
   .section-about #section-about_more {
     color: #27ae60;
     cursor: pointer; }

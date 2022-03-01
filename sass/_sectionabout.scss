@@ -80,20 +80,26 @@
   //CORRECT TO &:not(:last-child) {margin-right: 4rem;}
   &_icon {
     &_facebook {
-      margin-right: 4rem;
+      margin-right: 3rem;
       &:hover {
         color: #4267B2;
       }
     }
     &_mail {
-      margin-right: 4rem;
+      margin-right: 3rem;
       &:hover {
         color: $color-primary;
       }
     }
     &_youtube {
+      margin-right: 3rem;
       &:hover {
         color: #FF0000;
+      }
+    }
+    &_instagram {
+      &:hover {
+        color: #833AB4;
       }
     }
   }
