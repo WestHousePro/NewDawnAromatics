@@ -483,6 +483,10 @@ ion-icon {
       margin-right: 3rem; }
     .section-blog_buttons_button2 {
       margin-left: 3rem; }
+  .section-blog_paragraph {
+    margin-top: 1rem; }
+  .section-blog_paragraph2 {
+    margin-top: 1.5rem; }
 
 #section-blog_title_second {
   display: none; }
