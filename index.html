@@ -53,11 +53,11 @@
         />
       </div>
       <div class="header__text-box">
-        <h1 class="header-heading-primary">
-          <span class="header-heading-primary--main">Personalized</span>
-          <span class="header-heading-primary--sub">Clinical Aromatherapy</span>
-          <span class="header-heading-primary--sub">aromatic medicine</span>
-        </h1>
+        <span class="header-heading-primary">
+          <h1 class="header-heading-primary--main">Personalized</h1>
+          <h2 class="header-heading-primary--sub">Clinical Aromatherapy</h2>
+          <h2 class="header-heading-primary--sub">aromatic medicine</h2>
+        </span>
       </div>
       <a href="javascript:;" class="btn btn--green header_button1" onclick="consultationPopup()">Consultation</a>
       <a href="#HowItWorks" class="btn btn--white header_button2"
@@ -107,10 +107,10 @@
           </p>
       </div>
       <div class="section-works_container">
-        <div class="section-works_infobox">
+        <div class="section-works_infobox section-works_infobox_first">
           <div class="heading-secondary section-works_subheading">
             <img
-            src="img/works-consultation.jpg"
+            src="img/works_consultation.webp"
             alt="Notepad and Laptop"
             class="section-works_photos"
           />
@@ -125,10 +125,10 @@
             </li>
           </ul>
         </div>
-        <div class="section-works_infobox">
+        <div class="section-works_infobox section-works_infobox_second">
           <div class="heading-secondary section-works_subheading">
             <img
-            src="img/works-plan.jpg"
+            src="img/works_plan.webp"
             alt="Sun Through Trees"
             class="section-works_photos"
           />
@@ -139,10 +139,10 @@
               The best plan is the one you are most excited to enact. To get the most out of your aromatic program we will discuss the treatment expectations and a holistic approach to your healthcare.</li>
           </ul>
         </div>
-        <div class="section-works_infobox">
+        <div class="section-works_infobox section-works_infobox_third">
           <div class="heading-secondary section-works_subheading">
             <img
-            src="img/works-blends.jpg"
+            src="img/works_blends.webp"
             alt="Bottled Essential Oils"
             class="section-works_photos"
           />
@@ -154,10 +154,10 @@
             </li>
           </ul>
         </div>
-        <div class="section-works_infobox">
+        <div class="section-works_infobox section-works_infobox_fourth">
           <div class="heading-secondary section-works_subheading">
             <img
-            src="img/works-followup.jpg"
+            src="img/works_followup.webp"
             alt="Notepad"
             class="section-works_photos"
           />
@@ -172,9 +172,6 @@
         <a href="javascript:;" class="btn btn--green btn--green-main section-works_button1" onclick="consultationPopup()"
           >Book an Appointment</a
         >
-        <!-- <a href="#" class="btn btn--white section-works_button2"
-          >more information</a
-        > -->
       </div>
     </section>
     <section class="section-about" id="AboutMe">
@@ -183,7 +180,7 @@
       <div class="section-about_box">
         <div class="section-about_image">
           <img
-            src="img/michelle_como_headshot.JPG"
+            src="img/michelle_como_headshot.webp"
             alt="Michelle Como Headshot"
             class="photo_headshot"
           />
@@ -235,7 +232,7 @@
         <div class="section-about_certs">
           <a href="https://naha.org/about/">
             <img
-              src="img/NAHA-NCA-Level2F.png"
+              src="img/NAHA-NCA-Level2F.webp"
               alt="NAHA Level 2"
               class="section-about_naha"
             />
@@ -246,8 +243,6 @@
           </ul>
         </div>
         <div class="section-about_links">
-          <div class="section-about_contact"></div>
-          <div class="section-about_icons">
             <a href="mailto:balancedbodybymichelle@gmail.com">
               <ion-icon
                 name="mail-open"
@@ -276,14 +271,13 @@
                 class="section-about_icon section-about_icon_instagram">
               </ion-icon>
             </a>
-          </div>
         </div>
       </div>
     </section>
     <section class="section-newsletter">
       <div class="section-newsletter_container">
         <img
-            src="img/newsletter-trees.jpg"
+            src="img/newsletter_trees.webp"
             alt="Faded Trees"
             class="section-newsletter_image"
           />
@@ -292,14 +286,15 @@
           <p class="section-newsletter_text"> Learn about plants and essential oils. Tips, news, and recipes delivered right to your inbox!
           </p>
           <div class="content">
-              <!-- <form class="subscription" action="https://formspree.io/f/xqknbzep" method="POST"> -->
+              <form class="subscription" action="https://formspree.io/f/xqknbzep" method="POST">
                 <input name="email" class="add-email" type="email" placeholder="subscribe@me.now">
-                <button class="submit-email" type="submit" id="submit_newsletter" onclick="submitNewsletter();">
+                <input type="text" name="_gotcha" class="form_input" />
+                <button class="submit-email" type="submit" id="submit_newsletter" onsubmit="submitNewsletter();">
                   <span class="before-submit">Subscribe</span>
                   <span class="after-submit">Thank you for subscribing!</span>
                  </button>
               </form>
-            </div>
+          </div>
         </div>
 
       </div>
@@ -315,9 +310,6 @@
         <div class="section-blog_title heading-primary-long" id="section-blog_title_third">
           Essential Oils - What are the benefits?
         </div>
-        <!-- <div class="section-blog_title heading-primary-long" id="section-blog_title_fourth">
-          Fourth Temporary Larger Title
-        </div> -->
         <div class="section-blog_content">
           <span id="section-blog_content_first">
             <p>
@@ -325,7 +317,7 @@
             </p>
             <p class="section-blog_paragraph">
               <img
-                  src="img/Sun_thru_a_tree.jpg"
+                  src="img/sun_through_a_tree.webp"
                   alt="Sun Through Tree Leaves"
                   class="section-blog_content_photo"
                   id="section-blog_content_first_photo"
@@ -345,7 +337,7 @@
             </p>
             <p class="section-blog_paragraph">
               <img
-                  src="img/Peppermint.jpg"
+                  src="img/peppermint.webp"
                   alt="Peppermint Leaves"
                   class="section-blog_content_photo"
                   id="section-blog_content_second_photo"
@@ -362,7 +354,7 @@
             </p>
             <p>
               <img
-                  src="img/girl_smelling_lavender.jpg"
+                  src="img/girl_smelling_lavender.webp"
                   alt="Girl Smelling Lavender"
                   class="section-blog_content_photo"
                   id="section-blog_content_third_photo"
@@ -442,29 +434,12 @@
               Essential oils are a wonderful natural alternative to all the synthetic products that are on the market today. Consider reaching for these amazing plant medicines as an alternative to over the counter drugs. Add a few drops of orange essential oil to your diffuser to lift your mood; or perhaps a few drops of rosemary essential oil to help you concentrate. Maybe your stomach feels a little uneasy or nauseous, reach for a bottle of peppermint essential oil and take a few deep breaths. In this way you will be unlocking the wonders of these aromatic plants. 
             </p>
           </span>
-          <!-- <span id="section-blog_content_fourth">
-            <p>
-              FOURTH - Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus sit amet arcu vitae scelerisque. Curabitur vitae commodo libero. Donec rhoncus iaculis magna eget fringilla. Vestibulum vehicula tempus tristique. Donec aliquet, eros ac faucibus pretium, metus lorem commodo elit, in rutrum lectus odio in velit. Maecenas semper lobortis enim rutrum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus sit amet arcu vitae scelerisque. Curabitur vitae commodo libero. Donec rhoncus iaculis magna eget fringilla. Vestibulum vehicula tempus tristique. Donec aliquet, eros ac faucibus pretium, metus lorem commodo elit, in rutrum lectus odio in velit. Maecenas semper lobortis enim rutrum.
-            </p>
-            <p>
-              <img
-                  src="img/works-plan.jpg"
-                  alt="TEMP - REPLACE"
-                  class="section-blog_content_photo"
-                  id="section-blog_content_fourth_photo"
-              />
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus sit amet arcu vitae scelerisque. Curabitur vitae commodo libero. Donec rhoncus iaculis magna eget fringilla. Vestibulum vehicula tempus tristique. Donec aliquet, eros ac faucibus pretium, metus lorem commodo elit, in rutrum lectus odio in velit. Maecenas semper lobortis enim rutrum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus sit amet arcu vitae scelerisque. Curabitur vitae commodo libero. Donec rhoncus iaculis magna eget fringilla. Vestibulum vehicula tempus tristique. Donec aliquet, eros ac faucibus pretium, metus lorem commodo elit, in rutrum lectus odio in velit. Maecenas semper lobortis enim rutrum.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus sit amet arcu vitae scelerisque. Curabitur vitae commodo libero. Donec rhoncus iaculis magna eget fringilla. Vestibulum vehicula tempus tristique. Donec aliquet, eros ac faucibus pretium, metus lorem commodo elit, in rutrum lectus odio in velit. Maecenas semper lobortis enim rutrum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus sit amet arcu vitae scelerisque. Curabitur vitae commodo libero. Donec rhoncus iaculis magna eget fringilla. Vestibulum vehicula tempus tristique. Donec aliquet, eros ac faucibus pretium, metus lorem commodo elit, in rutrum lectus odio in velit. Maecenas semper lobortis enim rutrum.
-            </p>
-          </span> -->
         </div>
         <div class="section-blog_moreblogs">
-            <ol>
-              <li class="section-blog_moreblogs_list section-blog_moreblogs_list_border" onclick="blogSwitchFirst()" id="section-blog_list_first">
+            <ol class="section-blog_moreblogs_list_flex">
+              <li class="section-blog_moreblogs_list section-blog_moreblogs_list_first" onclick="blogSwitchFirst()" id="section-blog_list_first">
                 <img
-                src="img/Sun_thru_a_tree.jpg"
+                src="img/sun_through_a_tree.webp"
                 alt="Sun Through Tree Leaves"
                 class="section-blog_moreblogs_list_photos"
                 onclick="blogSwitchFirst()"
@@ -472,9 +447,9 @@
                 />
                 <span class="section-blog_moreblogs_list_text" onclick="blogSwitchFirst()">Why see a Clinical Aromatherapist?</span>
             </li>
-                <li class="section-blog_moreblogs_list section-blog_moreblogs_list_border" onclick="blogSwitchSecond()" id="section-blog_list_second">
+                <li class="section-blog_moreblogs_list section-blog_moreblogs_list_second" onclick="blogSwitchSecond()" id="section-blog_list_second">
                     <img
-                    src="img/Peppermint.jpg"
+                    src="img/peppermint.webp"
                     alt="Peppermint Leaves"
                     class="section-blog_moreblogs_list_photos"
                     onclick="blogSwitchSecond()"
@@ -482,9 +457,9 @@
                     />
                     <span class="section-blog_moreblogs_list_text" onclick="blogSwitchSecond()">Essential Oils – the plants messengers</span>
                 </li>
-                <li class="section-blog_moreblogs_list section-blog_moreblogs_list_border" onclick="blogSwitchThird()" id="section-blog_list_third">
+                <li class="section-blog_moreblogs_list section-blog_moreblogs_list_third" onclick="blogSwitchThird()" id="section-blog_list_third">
                     <img
-                    src="img/girl_smelling_lavender.jpg"
+                    src="img/girl_smelling_lavender.webp"
                     alt="Girl Smelling Lavender"
                     class="section-blog_moreblogs_list_photos"
                     onclick="blogSwitchThird()"
@@ -492,16 +467,6 @@
                     />
                     <span class="section-blog_moreblogs_list_text" onclick="blogSwitchThird()">Benefits of Essential Oils</span>
                 </li>
-                <!-- <li class="section-blog_moreblogs_list" onclick="blogSwitchFourth()" id="section-blog_list_fourth">
-                    <img
-                    src="img/works-plan.jpg"
-                    alt="TEMP - REPLACE"
-                    class="section-blog_moreblogs_list_photos"
-                    onclick="blogSwitchFourth()"
-                    id="section-blog_list_fourth_photo"
-                    />
-                    <span class="section-blog_moreblogs_list_text" onclick="blogSwitchFourth()">Fourth Temporary Small Title</span>
-                </li> -->
             </ol>
         </div>
       </div>
@@ -546,9 +511,8 @@
             </li>
           </ol>
         </div>
-        <div class="footer_boxes footer_boxes_thirdline">
-          <ol>
-            <li>
+        <div>
+            <div class="footer_boxes footer_boxes_thirdline">
               <a href="mailto:balancedbodybymichelle@gmail.com">
                 <ion-icon
                   name="mail-open"
@@ -577,11 +541,10 @@
                   class="section-about_icon section-about_icon_instagram">
                 </ion-icon>
               </a>
-            </li>
-            <li class="footer_boxes_text">
-              <a href="tel:(770)335-5628">(770) 335-5628</a>
-            </li>
-          </ol>
+            </div>
+          <span class="footer_boxes_text">
+            <a href="tel:(770)335-5628">(770) 335-5628</a>
+          </span>
         </div>
       </div>
     </footer>
@@ -610,18 +573,20 @@
       <div id="consultation_popup" class="section-consultation_popup">
         <h2 class="section-consultation_form_title">Take a step towards better health!</h2>
         <div class="section-consultation_forms">
-          <form id="ConsultationForm" action="#">
-            <input class="section-consultation_form" placeholder="Your Name" type="text" required />
-            <input class="section-consultation_form" placeholder="Email" type="email" required />
-            <input class="section-consultation_form" placeholder="Phone Number" type="tel" required />
-            <textarea class="section-consultation_form" placeholder="Share With Us"></textarea>
+          <form id="ConsultationForm" action="https://formspree.io/f/mbjwygwk" method="POST">
+            <input name="Name" class="section-consultation_form" placeholder="Your Name" type="text" required />
+            <input name="Email" class="section-consultation_form" placeholder="Email" type="email" required />
+            <input name="Phone Number" class="section-consultation_form" placeholder="Phone Number" type="tel" required />
+            <textarea name="Additional Input" class="section-consultation_form" placeholder="Share With Us"></textarea>
+            <input type="text" name="_gotcha" class="form_input" />
             <div class="section-consultation_checkbox">
-              <input class="section-consultation_checkbox_box" type="checkbox" />
+              <input name="Newsletter Signup" class="section-consultation_checkbox_box" type="checkbox" />
               <span>Sign up for our Newsletter!</span> 
             </div>
           </form>
         </div>
-        <input form="ConsultationForm" class="btn-small btn-small--green section-consultation_btn" type="submit" />
+        <input id="consultation_submit" onsubmit="consultationThankYou()" form="ConsultationForm" class="btn-small btn-small--green section-consultation_btn" type="submit" />
+        <span id="consultation_ty" class="section-consultation_ty">Thank you! Look forward to meeting you</span>
           <h2 class="section-consultation_info_title">What happens next?</h2>
           <div class="section-consultation_text">
             <p class="section-consultation_text_line">You will be contacted to set up a consultation time that works best for you.</p>
@@ -630,6 +595,7 @@
             <p class="section-consultation_text_line">Want to see if this is a good fit for you? Request a 15 minute complimentary introduction so we can get to know each other. </p>
           </div>
           <button class="btn-small btn-small--green-white section-consultation_btn2" onclick="consultationPopupClose()">Close</button>
+
       </div>
     </section>
     <script>window.onload = originalDisplay;</script>
@@ -637,5 +603,3 @@
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   </body>
 </html>
-
-<!-- class="btn btn--green header_button1" class="btn btn--white header_button2" -->

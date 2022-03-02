@@ -18,6 +18,11 @@ body {
   font-size: $default-font-size;
 }
 
+img {
+  max-width: 100%;
+  display: block;
+}
+
 ul,
 ol {
   list-style: none; /* Remove default bullets */

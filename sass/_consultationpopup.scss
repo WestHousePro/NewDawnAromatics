@@ -3,6 +3,7 @@
     
     &_popup{
         width: $grid-width*.8;
+        max-height: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto 1fr auto;
@@ -15,10 +16,9 @@
         overflow:auto;
         opacity: 0;
         background-image: linear-gradient(to right, rgba($color-grey-dark-1, 0) 48%, rgba($color-secondary, 1) 50%, rgba($color-primary-light, .5) 52%, rgba($color-primary-light, .5)),
-        url(../img/treesbackground1.jpg);
+        url(../img/trees_popup_background.webp);
         background-size: cover;
         background-position: bottom;
-        overflow:auto;
     }
 
     &_form_title{
@@ -51,6 +51,17 @@
         margin-bottom: 2rem;
     }
 
+    &_ty{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        justify-self: center;
+        align-self: center;
+        margin-bottom: 2rem;
+        color: $color-primary-light;
+    }
+
     &_form {
         width: 100%;
         margin-top: 2rem;
@@ -73,10 +84,6 @@
             height: 2rem;
         }
     }
-
-    // &_info{
-    //     padding: 4rem;
-    // }
 
     &_info_title {
         padding-top: 2rem;
@@ -110,7 +117,106 @@
         justify-self: center;
         align-self: center;
         margin-bottom: 2rem;
+        border: none;
     }
 }
 
-// linear-gradient(to left, #333, #333 50%, #eee 75%, #333 75%);
+.form_input{
+    display:none
+}
+
+@media (max-width: 912px) {
+    .section-consultation {        
+        &_popup{
+            width: 100%;
+        }
+
+        &_form_title{
+            font-size: 2rem;
+        }
+    
+        &_info_title {
+            font-size: 2rem;
+        }
+    }
+  }
+
+  @media (max-width: 750px) {
+    .section-consultation {
+        &_forms{
+            padding: 2rem 2rem;
+        }
+        &_form_title{
+            font-size: 1.8rem;
+        }
+    }
+  }
+
+  @media (max-width: 600px) {
+    .section-consultation {
+        &_popup{
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(4, auto);
+            background-image: url(../img/trees_popup_background.webp);
+        }
+    
+        &_form_title{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+    
+        &_forms{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+    
+        &_btn{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
+    
+        &_form {
+            width: 100%;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            padding: 1rem;
+            border-radius: 1rem;
+            background-color: $color-grey-light-1;
+            outline: none;
+    
+            &:focus {
+                border: 3px solid $color-primary;
+            }
+        }
+
+        &_info_title {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 4;
+            grid-row-end: 5;
+        }
+    
+        &_text{
+            padding: 2rem 4rem;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 5;
+            grid-row-end: 6;
+        }
+    
+        &_btn2{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 6;
+            grid-row-end: 7;
+        }
+    }
+  }

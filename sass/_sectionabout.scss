@@ -23,7 +23,6 @@
     grid-template-rows: repeat(2, auto);
     background-color: $color-grey-light-1;
     text-align: left;
-    // box-shadow: $box-shadow;
     padding: 2rem;
   }
 
@@ -70,29 +69,23 @@
   }
 
   &_links {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    align-self: center;
+    display: flex;
+    justify-content: space-between;
   }
 
   //CORRECT TO &:not(:last-child) {margin-right: 4rem;}
   &_icon {
     &_facebook {
-      margin-right: 3rem;
       &:hover {
         color: #4267B2;
       }
     }
     &_mail {
-      margin-right: 3rem;
       &:hover {
         color: $color-primary;
       }
     }
     &_youtube {
-      margin-right: 3rem;
       &:hover {
         color: #FF0000;
       }
@@ -117,4 +110,111 @@
 
 .photo_headshot {
   width: 100%;
+}
+
+@media (max-width: 1140px) {
+  .section-about {
+    &_box {
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: 0px) and (max-width: 1024px){
+  .section-about {
+  
+    &_box {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, auto);
+      width: 70rem;
+      grid-gap: $gutter-gap*.5;
+    }
+  
+    &_number {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 2;
+      grid-row-end: 3;
+    }
+  
+    &_text {
+      grid-column-start: 2;
+      grid-column-end: 4;
+      grid-row-start: 1;
+      grid-row-end: 2;
+    }
+  
+    &_certs {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 3;
+      align-self: center;
+    }
+  
+    &_naha {
+      width: 14rem;
+      margin-bottom: 2rem;
+    }
+  
+    &_links {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}
+
+@media (min-width: 0px) and (max-width: 700px){
+  .section-about {
+  
+    &_box {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, auto);
+      width: 100%;
+      grid-gap: $gutter-gap*.5;
+    }
+
+    &_image {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 1;
+      grid-row-end: 2;
+      align-self: center;
+      padding: 0;
+    }
+  
+    &_number {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 3;
+      grid-row-end: 4;
+    }
+  
+    &_text {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 3;
+    }
+  
+    &_certs {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 2;
+      align-self: center;
+    }
+  
+    &_naha {
+      width: 14rem;
+      margin-bottom: 2rem;
+    }
+  
+    &_links {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
 }

@@ -26,7 +26,7 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        z-index: 50;
+        z-index: 200;
         background-color: $color-grey-dark-1;
         padding: 2rem;
         color:$color-grey-light-3;
@@ -59,6 +59,23 @@
             grid-column-end: 3;
             grid-row-start: 2;
             grid-row-end: 3;
+        }
+    }
+}
+
+@media (max-width: 1140px) {
+    .section-disclaimer{
+        &_text{
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 700px){
+    .section-disclaimer{
+        &_popup {
+            width: 100%;
+            height: 100%;
         }
     }
 }

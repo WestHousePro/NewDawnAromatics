@@ -15,10 +15,35 @@
 
   &_boxes {
     color: $color-grey-light-1;
+
+    &_text{
+      color: $color-grey-light-1;
+    }
+
+    &_thirdline{
+      display: flex;
+      justify-content: space-between;
+    }
   }
 
   &_boxes_text:hover {
     color: $color-black;
     cursor: pointer;
+  }
+}
+
+@media (max-width: 1140px) {
+  .footer {  
+    &_container {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .footer {  
+    &_container {
+      grid-column-gap: $gutter-gap*.2;
+    }
   }
 }

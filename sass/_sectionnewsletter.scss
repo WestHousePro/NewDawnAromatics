@@ -10,7 +10,6 @@
     width: $grid-width;
     margin: 0 auto;
     margin-top: 6rem;
-    background-color: white;
   }
 
   &_image {
@@ -112,4 +111,26 @@
 .subscription.done .submit-email .after-submit {
   visibility: visible;
   opacity: 1;
+}
+
+@media (max-width: 1140px) {
+  .section-newsletter {
+    &_container {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .section-newsletter {
+
+    &_content {
+      width: 90%;
+      padding-bottom: 2rem;
+    }
+  }
+  .content {
+    width: 100%;
+    height: 4rem;
+  }
 }
