@@ -8,10 +8,10 @@
   },
   "author": "Andrew van der Westhuizen",
   "license": "ISC",
-  "devDependencies": {
-    "node-sass": "^6.0.0"
-  },
   "dependencies": {
     "eslint": "^8.4.1"
+  },
+  "devDependencies": {
+    "node-sass": "^7.0.1"
   }
 }
