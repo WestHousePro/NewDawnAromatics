@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="NAHA Certified Clinical Aromatherapist offering consultations and essential oil education online and in person, Located: Roswell, GA">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    
+    <title>Balanced Body by Michelle | Aromatherapy | Roswell, GA</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/resources/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/resources/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/resources/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/resources/favicons/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="/resources/favicons/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <link rel="shortcut icon" href="/resources/favicons/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#9f00a7" />
+    <meta
+      name="msapplication-config"
+      content="/resources/favicons/browserconfig.xml"
+    />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+  <body>
+    <header class="header" id="Home">
+      <div class="header__logo-box">
+        <a href="index.html">
+          <img
+            src="img/michelle_logo_named_144ppi.png"
+            alt="Balanced Body by Michelle Logo"
+            class="header__logo"
+          />
+        </a>
+      </div>
+      <div class="header__text-box">
+        <span class="header-heading-primary">
+          <h1 class="header-heading-primary--main">Personalized</h1>
+          <h2 class="header-heading-primary--sub">Clinical Aromatherapy</h2>
+          <h2 class="header-heading-primary--sub">aromatic medicine</h2>
+        </span>
+      </div>
+      <a href="javascript:;" class="btn btn--green header_button1" onclick="consultationPopup()">Consultation</a>
+      <a href="#HowItWorks" class="btn btn--white header_button2"
+        >How it works</a
+      >
+      <div class="header__nav">
+          <img
+            onclick="navMenu()"
+            src="img/icon-menuopen.svg"
+            alt="Open Menu"
+            class="header__nav_open"
+            id="header_menuopen"
+            style="display: inline"
+          />
+          <img
+            src="img/icon-menuclose.svg"
+            alt="Close Menu"
+            class="header__nav_close"
+            id="header_menuclose"
+            style="display: none"
+          />
+        <nav class="header__nav_menu" id="header_menu" style="display: none">
+          <ol>
+            <a href="#Home" class="header__nav_menu_item">
+              <li class="header__nav_menu_list header__nav_menu_list_border">Home</li></a>
+            <a href="javascript:;" class="header__nav_menu_item" onclick="consultationPopup()">
+              <li class="header__nav_menu_list header__nav_menu_list_border">Consultation</li></a>
+            <a href="#HowItWorks" class="header__nav_menu_item">
+              <li class="header__nav_menu_list header__nav_menu_list_border">How it Works</li></a>
+            <a href="#AboutMe" class="header__nav_menu_item">
+              <li class="header__nav_menu_list header__nav_menu_list_border">About Me</li></a>
+            <a href="#HomeBlog" class="header__nav_menu_item">
+              <li class="header__nav_menu_list">Blog</li></a>
+          </ol>
+        </nav>
+      </div>
+    </header>
+    <section class="section-works" id="HowItWorks">
+        <div class="section-works_leadin">
+          <h2
+            class="heading-primary-long section-works_heading"
+          >
+          Helping you towards greater health and wellness
+          </h2>
+          <p>
+            Are you looking to maintain your health naturally? Are you dealing with anxiety and stress? Do you have trouble sleeping? Or maybe you are trying to manage a chronic illness or fighting a cold. These and many other conditions can be addressed through your aromatic consultation. Here’s what to expect…
+          </p>
+      </div>
+      <div class="section-works_container">
+        <div class="section-works_infobox section-works_infobox_first">
+          <div class="heading-secondary section-works_subheading">
+            <img
+            src="img/works_consultation.webp"
+            alt="Notepad and Laptop"
+            class="section-works_photos"
+          />
+            Consultation
+          </div>
+          <ul>
+            <li>
+              Let's get to know your individual needs and how best I can help.
+            </li>
+            <li>
+              60 minute in depth consultation where we discuss in detail your specific concerns and health goals.
+            </li>
+          </ul>
+        </div>
+        <div class="section-works_infobox section-works_infobox_second">
+          <div class="heading-secondary section-works_subheading">
+            <img
+            src="img/works_plan.webp"
+            alt="Sun Through Trees"
+            class="section-works_photos"
+          />
+            Holistic Plan
+          </div>
+          <ul>
+            <li>
+              The best plan is the one you are most excited to enact. To get the most out of your aromatic program we will discuss the treatment expectations and a holistic approach to your healthcare.</li>
+          </ul>
+        </div>
+        <div class="section-works_infobox section-works_infobox_third">
+          <div class="heading-secondary section-works_subheading">
+            <img
+            src="img/works_blends.webp"
+            alt="Bottled Essential Oils"
+            class="section-works_photos"
+          />
+            Custom Blends
+          </div>
+          <ul>
+            <li>
+              We all have a unique body chemistry and constitution. To be most effective, I will work up a personalized treatment plan with blends that meet your specific needs.
+            </li>
+          </ul>
+        </div>
+        <div class="section-works_infobox section-works_infobox_fourth">
+          <div class="heading-secondary section-works_subheading">
+            <img
+            src="img/works_followup.webp"
+            alt="Notepad"
+            class="section-works_photos"
+          />
+            Follow up
+          </div>
+          <ul>
+            <li>
+              After having been on your aromatic program for approximately 1-2 weeks I recommend a follow-up appointment to discuss any changes, concerns, improvements or questions.
+            </li>
+          </ul>
+        </div>
+        <a href="javascript:;" class="btn btn--green btn--green-main section-works_button1" onclick="consultationPopup()"
+          >Book an Appointment</a
+        >
+      </div>
+    </section>
+    <section class="section-about" id="AboutMe">
+      <h2 class="heading-primary-long">Get to know your Aromatherapist
+      </h2>
+      <div class="section-about_box">
+        <div class="section-about_image">
+          <img
+            src="img/michelle_como_headshot.webp"
+            alt="Michelle Como Headshot"
+            class="photo_headshot"
+          />
+        </div>
+        <a href="tel:(770)335-5628" class="btn btn--green_white section-about_number"
+          >(770) 335-5628</a
+        >
+        <div class="section-about_text">
+          <p>
+            Hello my name is Michelle, thank you for visiting my site! I’m
+            excited to share a little bit about myself. I have been interested
+            in health and well being for as long as I can remember, and wanting
+            to help others led me to become a massage therapist. I found joy in
+            helping clients relieve pain, stress, and anxiety. To complement my
+            therapy, I later became a certified reflexologist. Throughout my
+            practice I have enjoyed incorporating essential oils in the
+            treatment of my clients. I have seen not only their relaxing effects
+            but also their ability to relieve pain. This led me to my training
+            in aromatherapy, helping me to incorporate essential oils safely in
+            many ways beyond massage therapy.
+          </p>
+          <p class="section-about_paragraph">
+            My passion for helping people<span id="dots">...</span
+            ><span id="more">
+              compelled me to further my education with comprehensive and in
+              depth training to become a Clinical Aromatherapist and Aromatic
+              Medicine Practitioner. I truly believe in the body’s natural
+              ability to heal and how essential oils are valuable in supporting
+              the process. I take a holistic approach to health and well being,
+              looking at diet and lifestyle as well as how essential oils can
+              assist the body in regaining balance.</span
+            >
+          </p>
+          <p class="section-about_paragraph">
+            <span id="moreSecond"
+              >Our unique body chemistry and lifestyle respond best to a
+              personalized approach. Join me for your custom aromatic program,
+              matching essential oils and herbs based on your individual
+              constitution and needs. I look forward to getting to know you
+              through our consultation!</span
+            >
+          </p>
+          <span onclick="readMore()" id="section-about_more"
+            >Read More&nbsp<span class="section-about_arrow"
+              >&#8595;</span
+            ></span
+          >
+        </div>
+        <div class="section-about_certs">
+          <a href="https://naha.org/about/">
+            <img
+              src="img/NAHA-NCA-Level2F.webp"
+              alt="NAHA Level 2"
+              class="section-about_naha"
+            />
+          </a>
+          <ul>
+            <li>Member of United Plant Savers</li>
+            <li>Member of The American Herbalist Guild</li>
+          </ul>
+        </div>
+        <div class="section-about_links">
+            <a href="mailto:balancedbodybymichelle@gmail.com">
+              <ion-icon
+                name="mail-open"
+                alt="E-Mail Icon"
+                class="section-about_icon section-about_icon_mail">
+              </ion-icon>
+            </a>
+            <a href="https://www.facebook.com/balancedbodybymichelle">
+              <ion-icon
+                name="logo-facebook"
+                alt="Facebook Icon"
+                class="section-about_icon section-about_icon_facebook">
+              </ion-icon>
+            </a>
+            <a href="https://www.youtube.com/channel/UCQNhPQ_ErNPKXLUr44VSEzg">
+              <ion-icon
+                name="logo-youtube"
+                alt="Youtube Icon"
+                class="section-about_icon section-about_icon_youtube">
+            </ion-icon>
+            </a>
+            <a href="https://www.instagram.com/balancedbodybymichelle/">
+              <ion-icon
+                name="logo-instagram"
+                alt="Instagram Icon"
+                class="section-about_icon section-about_icon_instagram">
+              </ion-icon>
+            </a>
+        </div>
+      </div>
+    </section>
+    <section class="section-newsletter">
+      <div class="section-newsletter_container">
+        <img
+            src="img/newsletter_trees.webp"
+            alt="Faded Trees"
+            class="section-newsletter_image"
+          />
+        <div class="section-newsletter_content" id="Newsletter">
+         <h2 class="heading-primary-long">Get your weekly dose of nature</h2>
+          <p class="section-newsletter_text"> Learn about plants and essential oils. Tips, news, and recipes delivered right to your inbox!
+          </p>
+          <div class="content">
+              <form class="subscription" action="https://formspree.io/f/xqknbzep" method="POST">
+                <input name="email" class="add-email" type="email" placeholder="subscribe@me.now">
+                <input type="text" name="_gotcha" class="form_input" />
+                <button class="submit-email" type="submit" id="submit_newsletter" onsubmit="submitNewsletter();">
+                  <span class="before-submit">Subscribe</span>
+                  <span class="after-submit">Thank you for subscribing!</span>
+                 </button>
+              </form>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <section class="section-blog">
+      <div class="section-blog_container" id="HomeBlog">
+        <div class="section-blog_title heading-primary-long" id="section-blog_title_first">
+          Why see a Clinical Aromatherapist?
+        </div>
+        <div class="section-blog_title heading-primary-long" id="section-blog_title_second">
+          Essential Oils – the plants messengers
+        </div>
+        <div class="section-blog_title heading-primary-long" id="section-blog_title_third">
+          Essential Oils - What are the benefits?
+        </div>
+        <div class="section-blog_content">
+          <span id="section-blog_content_first">
+            <p>
+              No two people are alike, we are all unique. Our constitution and chemical makeup are all different. There is no one herb nor one essential oil that fits for everyone, or every occasion. Even when two people appear to present with the same condition, for example a headache, where allopathic medicine would prescribe the same painkiller for both people, in Aromatic Medicine we look at the individual. What is the cause of the headache? What type of headache is it? How does it manifest itself? Taking a more holistic approach to health and well being, looking at diet and lifestyle as well as how the essential oils can assist the body in regaining balance. With a more personalized approach, a custom aromatic program is worked up matching essential oils and herbs based on your individual constitution and needs.
+            </p>
+            <p class="section-blog_paragraph">
+              <img
+                  src="img/sun_through_a_tree.webp"
+                  alt="Sun Through Tree Leaves"
+                  class="section-blog_content_photo"
+                  id="section-blog_content_first_photo"
+              />
+              Clinical Aromatherapy and Aromatic Medicine use the plant’s powerful and complex compounds to support the health and well being of your body. Many synthetic drugs are actually derived from a component of the essential oils of the plants, then synthesized in a lab. The downfall with the use of synthesized drugs is that it is a focused, singular approach to treating a condition. While that may sound good, that’s not really how disease works and is the reason why many pathogens become immune to these drugs. Essential oils, on the other hand, are multi-faceted and multi targeted. They are very complex molecules and are a powerful natural alternative to synthetic drugs, with little or no side effects. Due to the natural complexity of their chemical makeup, it is virtually unheard of for a virus or bacteria to become resistant to the essential oil.
+            </p>
+            <p class="section-blog_paragraph">
+              Clinical Aromatherapy and Aromatic Medicine have proven to be beneficial when dealing with insomnia, migraines, respiratory conditions, digestive issues, PMS and menopause, muscular aches and pains, ADHD, wounds, burns, stress related conditions, anxiety, emotional conditions and much more. Even if you are in good health, it can help to strengthen your immune system by managing stress and maintaining good health. Many people have found it very beneficial when dealing with trauma, grief and loss, anger and other emotional issues.
+            </p>
+            <p class="section-blog_paragraph">
+              The innate ability of essential oils to balance the body and bring it back into harmony is truly amazing. The plant's healing power, along with the incredible natural healing ability of our bodies, makes incorporating the safe use of essential oils and herbs into your healthcare and daily life very beneficial. Allow me to assist you in your journey to better health.
+            </p>
+          </span>
+          <span id="section-blog_content_second">
+            <p>
+              Have you ever given thought to what essential oils actually are? Well in short, essential oils are the plant’s chemical messengers. Plants attract or repel insects, fight off fungi, bacteria and other microbes, purify the air and communicate with each other. They do all of this via their chemical messengers – the essential oils. They are what give the plant its scent. Take for example Rosemary. If you were to pick the herb from your garden, rub it between your fingers and then smell your hand – that rosemary smell is in fact the essential oil from the plant.
+            </p>
+            <p class="section-blog_paragraph">
+              <img
+                  src="img/peppermint.webp"
+                  alt="Peppermint Leaves"
+                  class="section-blog_content_photo"
+                  id="section-blog_content_second_photo"
+              />
+              So how do these essential oils get from the plant into the bottle? Various parts of the plant are used - leaves, needles, grasses, seeds, flowers, fruit, roots, wood and even resin. Several different methods are used to extract essential oils from these parts of the plant. Steam distillation( the most common), cold pressed (for citrus oils), CO2 extraction and even solvent extraction to make the flower absolutes (Rose, Jasmine and so forth). These are the processes that separate the essential oil from the plant. With that being said, essential oils are complex and highly concentrated. For example, it takes 4-5 pounds of mint leaves to produce a ½ ounce (15ml) bottle of peppermint(mentha x piperita) essential oil. Just think about how many mint leaves that is!
+            </p>
+            <p class="section-blog_paragraph">
+              It’s these volatile chemical compounds that we use in aromatherapy. We respect the potency and complexity of these oils as well as the healing power they bring to the table. We work with the body’s natural healing ability as well the essential oils ability to balance the body. But never forget the plant these essential oils came from. The next time you pick up a bottle of essential oil, take a moment to remember and appreciate the beautiful and aromatic plant that housed these wonderful chemical compounds which bring us so much joy. Appreciate these amazing aromatics.
+            </p>
+          </span>
+          <span id="section-blog_content_third">
+            <p>
+              Essential oils are at the heart of aromatherapy. These plant derived oils can be used to support our health and well-being through inhalation, diffusion, various methods of application to the skin, internally as medicine as well as natural cleaning products. Utilizing essential oils through inhalation has a profound effect on our nervous system. They have a direct impact on our limbic system - the part of our brain that is responsible for our emotions. Here are some of the positive effects that inhalation of essential oils can have on us: 
+            </p>
+            <p>
+              <img
+                  src="img/girl_smelling_lavender.webp"
+                  alt="Girl Smelling Lavender"
+                  class="section-blog_content_photo"
+                  id="section-blog_content_third_photo"
+              />
+              <ul>
+                <li>
+                  Enhance memory and alertness
+                </li>
+                <li>
+                  Reduce stress and anxiety
+                </li>
+                <li>
+                  Alter pain perception 
+                </li>
+                <li>
+                  Improve our mood
+                </li>
+                <li>
+                  Improve our quality of sleep 
+                </li>
+                <li>
+                  Relieve or reduce nausea
+                </li>
+                <li>
+                  Support immunity and increase resiliency
+                </li>
+                <li>
+                  Enhance sexuality
+                </li>
+                <li>
+                  Improve emotional wellbeing
+                </li>
+                <li>
+                  Support in weight loss
+                </li>
+                <li>
+                  Relieve sinus/respiratory congestion
+                </li>
+              </ul>
+            </p>
+            <p class="section-blog_paragraph2">
+              Essential oils can also benefit the health of our skin as well as other systems of our body. The benefits of applying diluted essential oils to the skin include: 
+              <ul class="section-blog_content_bullets">
+                <li class="section-blog_content_bullets_item">
+                  Soothing inflamed or itchy skin
+                </li>
+                <li class="section-blog_content_bullets_item">
+                  Addressing acne and infections
+                </li>
+                <li class="section-blog_content_bullets_item">
+                  Support wound healing
+                </li>
+                <li class="section-blog_content_bullets_item">
+                  Contribute to healthy glowing skin
+                </li>
+                <li class="section-blog_content_bullets_item">
+                  Natural skin care/reducing toxic load
+                </li>
+                <li class="section-blog_content_bullets_item">
+                  Soothing muscular aches and pains
+                </li>
+                <li class="section-blog_content_bullets_item">
+                  Support healing from sprains, strains and injuries
+                </li>
+                <li class="section-blog_content_bullets_item">
+                  Relieve nerve pain
+                </li>
+                <li class="section-blog_content_bullets_item">
+                  Relieve digestive upsets and cramps
+                </li>
+                <li class="section-blog_content_bullets_item">
+                  Reduce menstrual cramps and pain 
+                </li>
+              </ul>
+            </p>
+            <p class="section-blog_paragraph">
+              Essential oils are a wonderful natural alternative to all the synthetic products that are on the market today. Consider reaching for these amazing plant medicines as an alternative to over the counter drugs. Add a few drops of orange essential oil to your diffuser to lift your mood; or perhaps a few drops of rosemary essential oil to help you concentrate. Maybe your stomach feels a little uneasy or nauseous, reach for a bottle of peppermint essential oil and take a few deep breaths. In this way you will be unlocking the wonders of these aromatic plants. 
+            </p>
+          </span>
+        </div>
+        <div class="section-blog_moreblogs">
+            <ol class="section-blog_moreblogs_list_flex">
+              <li class="section-blog_moreblogs_list section-blog_moreblogs_list_first" onclick="blogSwitchFirst()" id="section-blog_list_first">
+                <img
+                src="img/sun_through_a_tree.webp"
+                alt="Sun Through Tree Leaves"
+                class="section-blog_moreblogs_list_photos"
+                onclick="blogSwitchFirst()"
+                id="section-blog_list_first_photo"
+                />
+                <span class="section-blog_moreblogs_list_text" onclick="blogSwitchFirst()">Why see a Clinical Aromatherapist?</span>
+            </li>
+                <li class="section-blog_moreblogs_list section-blog_moreblogs_list_second" onclick="blogSwitchSecond()" id="section-blog_list_second">
+                    <img
+                    src="img/peppermint.webp"
+                    alt="Peppermint Leaves"
+                    class="section-blog_moreblogs_list_photos"
+                    onclick="blogSwitchSecond()"
+                    id="section-blog_list_second_photo"
+                    />
+                    <span class="section-blog_moreblogs_list_text" onclick="blogSwitchSecond()">Essential Oils – the plants messengers</span>
+                </li>
+                <li class="section-blog_moreblogs_list section-blog_moreblogs_list_third" onclick="blogSwitchThird()" id="section-blog_list_third">
+                    <img
+                    src="img/girl_smelling_lavender.webp"
+                    alt="Girl Smelling Lavender"
+                    class="section-blog_moreblogs_list_photos"
+                    onclick="blogSwitchThird()"
+                    id="section-blog_list_third_photo"
+                    />
+                    <span class="section-blog_moreblogs_list_text" onclick="blogSwitchThird()">Benefits of Essential Oils</span>
+                </li>
+            </ol>
+        </div>
+      </div>
+        <div class="section-blog_buttons">
+          <!-- <a href="#" class="btn btn--green_white section-blog_buttons_button1"
+            >Learn More</a> -->
+          <a href="javascript:;" class="btn btn--green section-blog_buttons_button2" onclick="consultationPopup()"
+            >Contact me</a>
+        </div>
+    </section>
+    <footer class="footer">
+      <div class="footer_container">
+        <div class="footer_boxes footer_boxes_firstline">
+          <ol>
+            <li class="footer_boxes_text">
+              <a href="#Home">
+              Home</a>
+            </li>
+            <li class="footer_boxes_text">
+              <a href="#HowItWorks">
+              How it works</a>
+            </li>
+            <li class="footer_boxes_text">
+              <a href="#AboutMe">
+              About me</a>
+            </li>
+          </ol>
+        </div>
+        <div class="footer_boxes footer_boxes_secondline">
+          <ol>
+            <li class="footer_boxes_text">
+              <a href="#Newsletter">
+              Newsletter</a>
+            </li>
+            <li class="footer_boxes_text">
+              <span class="footer_boxes_text_consultation" onclick="consultationPopup()">
+              Consultation</span>
+            </li>
+            <li class="footer_boxes_text">
+              <a href="#HomeBlog">
+              Blog</a>
+            </li>
+          </ol>
+        </div>
+        <div>
+            <div class="footer_boxes footer_boxes_thirdline">
+              <a href="mailto:balancedbodybymichelle@gmail.com">
+                <ion-icon
+                  name="mail-open"
+                  alt="E-Mail Icon"
+                  class="section-about_icon section-about_icon_mail">
+              </ion-icon>
+              </a>
+              <a href="https://www.facebook.com/balancedbodybymichelle">
+                <ion-icon
+                  name="logo-facebook"
+                  alt="Facebook Icon"
+                  class="section-about_icon section-about_icon_facebook">
+              </ion-icon>
+              </a>
+              <a href="https://www.youtube.com/channel/UCQNhPQ_ErNPKXLUr44VSEzg">
+                <ion-icon
+                  name="logo-youtube"
+                  alt="Youtube Icon"
+                  class="section-about_icon section-about_icon_youtube">
+                </ion-icon>
+              </a>
+              <a href="https://www.instagram.com/balancedbodybymichelle/">
+                <ion-icon
+                  name="logo-instagram"
+                  alt="Instagram Icon"
+                  class="section-about_icon section-about_icon_instagram">
+                </ion-icon>
+              </a>
+            </div>
+          <span class="footer_boxes_text">
+            <a href="tel:(770)335-5628">(770) 335-5628</a>
+          </span>
+        </div>
+      </div>
+    </footer>
+    <section class="section-disclaimer" id="section-disclaimer">
+      <ol class="section-disclaimer_text">
+        <li>&copy; Copyright 2022 - All rights reserved</li>
+        <li>Built with care by WestHousePros</li>
+        <li><span class="section-disclaimer_link" onclick="disclaimerPopup()">Read our disclaimer here</span></li>
+      </ol>
+      <div class="section-disclaimer_popup" id="disclaimer_popup">
+        <div class="section-disclaimer_popup_header"> Disclaimers and Privacy Policy </div>
+          <ion-icon
+            name="close-outline"
+            alt="Close Icon"
+            class="section-disclaimer_popup_icon_close"
+            id="disclaimer_close"
+            onclick="disclaimerPopupClose()">
+          </ion-icon>
+          <div class="section-disclaimer_popup_text"><p>Health Disclaimer - Clinical Aromatherapists are not doctors and do not diagnose or treat conditions. Rather we use essential oils and herbs to support the body. When used as part of a holistic lifestyle they can assist in greater health, well being and quality of life. Good health is our own personal responsibility and the final decision on any recommendation made is always yours. This should empower each of us knowing that we can make decisions everyday that can impact our health in a positive way. This site is for informational purposes only, and is not to be used or relied on for any diagnostic or treatment purposes. This is not a replacement for seeking medical attention.</p>
+          <p>Privacy Policy - This website uses google analytics and cookies to identify where our readers are visiting from, and if they’ve been here previously so we can best serve our audience. We allow people to sign-up for our email newsletter, and your email will only be used for this purpose. Anyone who signs up to our email list can unsubscribe if they choose to leave.
+            By using our website you are accepting the use of cookies on our site. If you sign up for our programs or email newsletter you will need to confirm that you’re human and that you agree to these terms.</p>
+        </p></div>
+      </div>
+    </section>
+    <section class="section-consultation">
+      <div id="consultation_popup" class="section-consultation_popup">
+        <h2 class="section-consultation_form_title">Take a step towards better health!</h2>
+        <div class="section-consultation_forms">
+          <form id="ConsultationForm" action="https://formspree.io/f/mbjwygwk" method="POST">
+            <input name="Name" class="section-consultation_form" placeholder="Your Name" type="text" required />
+            <input name="Email" class="section-consultation_form" placeholder="Email" type="email" required />
+            <input name="Phone Number" class="section-consultation_form" placeholder="Phone Number" type="tel" required />
+            <textarea name="Additional Input" class="section-consultation_form" placeholder="Share With Us"></textarea>
+            <input type="text" name="_gotcha" class="form_input" />
+            <div class="section-consultation_checkbox">
+              <input name="Newsletter Signup" class="section-consultation_checkbox_box" type="checkbox" />
+              <span>Sign up for our Newsletter!</span> 
+            </div>
+          </form>
+        </div>
+        <input id="consultation_submit" onsubmit="consultationThankYou()" form="ConsultationForm" class="btn-small btn-small--green section-consultation_btn" type="submit" />
+        <span id="consultation_ty" class="section-consultation_ty">Thank you! Look forward to meeting you</span>
+          <h2 class="section-consultation_info_title">What happens next?</h2>
+          <div class="section-consultation_text">
+            <p class="section-consultation_text_line">You will be contacted to set up a consultation time that works best for you.</p>
+            <p class="section-consultation_text_line">1 Hour Consultation - $70</p>
+            <p class="section-consultation_text_line">Consultations are currently conducted via zoom.</p>
+            <p class="section-consultation_text_line">Want to see if this is a good fit for you? Request a 15 minute complimentary introduction so we can get to know each other. </p>
+          </div>
+          <button class="btn-small btn-small--green-white section-consultation_btn2" onclick="consultationPopupClose()">Close</button>
+
+      </div>
+    </section>
+    <script src="js/script.js"></script>
+    <script>window.onload = originalDisplay;</script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
