@@ -73,16 +73,15 @@
     justify-content: space-between;
   }
 
-  //CORRECT TO &:not(:last-child) {margin-right: 4rem;}
   &_icon {
-    &_facebook {
-      &:hover {
-        color: #4267B2;
-      }
-    }
     &_mail {
       &:hover {
         color: $color-primary;
+      }
+    }
+    &_facebook {
+      &:hover {
+        color: #4267B2;
       }
     }
     &_youtube {

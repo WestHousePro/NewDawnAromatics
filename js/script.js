@@ -51,8 +51,6 @@ function readMore() {
   }
 }
 
-// TODO - ADD MOBILE TOUCH EVENT
-
 function navMenu() {
   const openMenu = document.getElementById("header_menuopen");
   const closeMenu = document.getElementById("header_menuclose");

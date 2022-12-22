@@ -507,10 +507,10 @@ ion-icon {
   .section-about_links {
     display: flex;
     justify-content: space-between; }
-  .section-about_icon_facebook:hover {
-    color: #4267B2; }
   .section-about_icon_mail:hover {
     color: #27ae60; }
+  .section-about_icon_facebook:hover {
+    color: #4267B2; }
   .section-about_icon_youtube:hover {
     color: #FF0000; }
   .section-about_icon_instagram:hover {
@@ -1121,6 +1121,12 @@ body {
   font-size: 3.5rem;
   font-weight: 400;
   word-spacing: 0.4rem; }
+  .heading-primary-long-underline::after {
+    content: "";
+    display: block;
+    max-width: 70%;
+    border-bottom: 0.3rem solid #36d278;
+    margin: 1rem auto; }
 
 .heading-secondary {
   text-transform: uppercase;
@@ -1161,3 +1167,12 @@ body {
     letter-spacing: 1.3rem; }
   .header-heading-primary--sub {
     letter-spacing: .3rem; } }
+
+.blog {
+  background-color: #666; }
+  .blog__logo-box {
+    margin-top: 6rem;
+    margin-left: 6rem;
+    z-index: 1000; }
+  .blog__logo {
+    height: 14rem; }

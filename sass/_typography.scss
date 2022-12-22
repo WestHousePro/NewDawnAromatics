@@ -49,6 +49,14 @@ body {
   font-size: 3.5rem;
   font-weight: 400;
   word-spacing: 0.4rem;
+
+  &-underline::after {
+    content:"";
+    display:block;
+    max-width:70%;
+    border-bottom: .3rem solid $color-primary-light;
+    margin: 1rem auto;
+  }
 }
 
 .heading-secondary {

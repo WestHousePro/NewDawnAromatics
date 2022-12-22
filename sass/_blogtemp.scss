@@ -1,0 +1,18 @@
+.blog {
+  background-color: $color-grey-dark-1;
+    // display: grid;
+    // grid-gap: $gutter-gap;
+    // grid-template-columns: 1fr 1fr;
+    // grid-template-rows: 3fr 2fr;
+  
+    &__logo-box {
+      // position: fixed;
+      margin-top: 6rem;
+      margin-left: 6rem;
+      z-index: 1000;
+    }
+  
+    &__logo {
+      height: 14rem;
+    }
+}
