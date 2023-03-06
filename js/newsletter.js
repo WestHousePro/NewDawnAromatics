@@ -17,7 +17,7 @@ class Newsletter extends HTMLElement {
             </p>
             <div class="content">
                 <form class="subscription" action="https://formspree.io/f/xqknbzep" method="POST">
-                  <input name="email" class="add-email" type="email" placeholder="subscribe@me.now">
+                  <input name="email" class="add-email" type="email" placeholder="subscribe@me.now" required>
                   <input type="text" name="_gotcha" class="form_input" />
                   <button class="submit-email" type="submit" id="submit_newsletter" onsubmit="submitNewsletter();">
                     <span class="before-submit">Subscribe</span>
