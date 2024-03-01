@@ -1,0 +1,152 @@
+.unsubscribeheader {
+  display: grid;
+  grid-gap: $gutter-gap;
+  grid-template-columns: 1fr;
+
+  &__logo-box {
+    position: relative;
+    margin-top: 6rem;
+    margin-left: 6rem;
+  }
+
+  &__logo {
+    height: 18rem;
+  }
+}
+
+  .section-unsubscribe {
+    background-color: $color-grey-light-2;
+    padding-bottom: 6rem;
+    position: relative;
+    z-index: 5;
+  
+    &_container {
+      overflow: hidden;
+      position: relative;
+      width: $grid-width;
+      margin: 0 auto;
+      margin-top: 6rem;
+    }
+  
+    &_image {
+      opacity: 0.1;
+      filter: blur(0.1rem) saturate(150%);
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: auto;
+    }
+  
+    &_content {
+      position: relative;
+      margin: 0 auto;
+      width: 80%;
+      padding-left: 4rem;
+      padding-right: 4rem;
+      padding-bottom: 2rem;
+    }
+  
+    &_text {
+      text-align: center;
+    }
+  }
+  
+  .content {
+    width: 36rem;
+    height: 4rem;
+    box-shadow: 0.2rem 0.4rem 1rem rgba(0, 0, 0, 0.2);
+    border-radius: 6rem;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 2rem;
+  }
+  
+  .subscription {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .subscription .add-email {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 0 2rem;
+  }
+  
+  .subscription .submit-email {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: calc(100% - 0.2rem);
+    width: 10rem;
+    border: none;
+    border-radius: 6rem;
+    outline: none;
+    margin: 0.1rem;
+    padding: 0 2rem;
+    cursor: pointer;
+    background: $color-secondary;
+    color: $color-grey-light-1;
+    transition: width 0.35s ease-in-out, background 0.35s ease-in-out;
+  }
+  
+  .subscription.done .submit-email {
+    width: calc(100% - 0.2rem);
+    background: $color-primary-light;
+  }
+  
+  .subscription .submit-email .before-submit,
+  .subscription .submit-email .after-submit {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 3.8rem;
+    transition: visibility 0.35s ease-in-out, opacity 0.35s ease-in-out;
+  }
+  
+  .subscription.done .submit-email .before-submit,
+  .subscription:not(.done) .submit-email .after-submit {
+    visibility: hidden;
+    opacity: 0;
+  }
+  
+  .subscription .submit-email .after-submit {
+    transition-delay: 0.35s;
+  }
+  
+  .subscription:not(.done) .submit-email .before-submit,
+  .subscription.done .submit-email .after-submit {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  @media (max-width: 1140px) {
+    .section-newsletter {
+      &_container {
+        width: 100%;
+      }
+    }
+  }
+  
+  @media (max-width: 550px) {
+    .section-newsletter {
+  
+      &_content {
+        width: 90%;
+        padding-bottom: 2rem;
+      }
+    }
+    .content {
+      width: 100%;
+      height: 4rem;
+    }
+  }

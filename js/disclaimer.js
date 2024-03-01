@@ -6,7 +6,7 @@ class Disclaimer extends HTMLElement {
         this.innerHTML = `
         <section class="section-disclaimer" id="section-disclaimer">
         <ol class="section-disclaimer_text">
-          <li>&copy; Copyright 2022 - All rights reserved</li>
+          <li>&copy; Copyright 2024 - All rights reserved</li>
           <li>Built with care by WestHousePros</li>
           <li><span class="section-disclaimer_link" onclick="disclaimerPopup()">Read our disclaimer here</span></li>
         </ol>

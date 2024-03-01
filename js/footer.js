@@ -9,15 +9,15 @@ class Footer extends HTMLElement {
         <div class="footer_boxes footer_boxes_firstline">
           <ol>
             <li class="footer_boxes_text">
-              <a href="#Home">
+              <a href="/#Home">
               Home</a>
             </li>
             <li class="footer_boxes_text">
-              <a href="#HowItWorks">
+              <a href="/#HowItWorks">
               How it works</a>
             </li>
             <li class="footer_boxes_text">
-              <a href="#AboutMe">
+              <a href="/#AboutMe">
               About me</a>
             </li>
           </ol>

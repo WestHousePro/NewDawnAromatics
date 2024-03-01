@@ -7,7 +7,7 @@ class Newsletter extends HTMLElement {
         <section class="section-newsletter">
         <div class="section-newsletter_container">
           <img
-              src="../img/newsletter_trees.webp"
+              src="/img/newsletter_trees.webp"
               alt="Faded Tree and Orange Leaves"
               class="section-newsletter_image"
             />

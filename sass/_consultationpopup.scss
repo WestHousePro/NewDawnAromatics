@@ -16,7 +16,7 @@
         overflow:auto;
         opacity: 0;
         background-image: linear-gradient(to right, rgba($color-grey-dark-1, 0) 48%, rgba($color-secondary, 1) 50%, rgba($color-primary-light, .5) 52%, rgba($color-primary-light, .5)),
-        url(../img/trees_popup_background.webp);
+        url(/img/trees_popup_background.webp);
         background-size: cover;
         background-position: bottom;
     }
@@ -159,7 +159,7 @@
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: repeat(4, auto);
-            background-image: url(../img/trees_popup_background.webp);
+            background-image: url(/img/trees_popup_background.webp);
         }
     
         &_form_title{
