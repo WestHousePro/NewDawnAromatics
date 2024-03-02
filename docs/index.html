@@ -50,6 +50,10 @@
       content="/resources/favicons/browserconfig.xml"
     />
     <meta name="theme-color" content="#ffffff" />
+    <script src="js/footer.js" type="text/javascript" defer></script>
+    <script src="js/disclaimer.js" type="text/javascript" defer></script>
+    <script src="js/consultation.js" type="text/javascript" defer></script>
+    <script src="js/newsletter.js" type="text/javascript" defer></script>
   </head>
   <body>
     <header class="header" id="Home">
@@ -185,7 +189,7 @@
       </div>
     </section>
     <section class="section-about" id="AboutMe">
-      <h2 class="heading-primary-long">Get to know your Aromatherapist
+      <h2 class="heading-primary-long heading-primary-long-underline">Get to know your Aromatherapist
       </h2>
       <div class="section-about_box">
         <div class="section-about_image">
@@ -242,8 +246,8 @@
         <div class="section-about_certs">
           <a href="https://naha.org/about/">
             <img
-              src="img/NAHA-NCA-Level2F.webp"
-              alt="NAHA Level 2 Certificate"
+              src="img/NAHA-NCA-Level3F.jpg"
+              alt="NAHA Level 3 Certificate"
               class="section-about_naha"
             />
           </a>
@@ -284,31 +288,7 @@
         </div>
       </div>
     </section>
-    <section class="section-newsletter">
-      <div class="section-newsletter_container">
-        <img
-            src="img/newsletter_trees.webp"
-            alt="Faded Tree and Orange Leaves"
-            class="section-newsletter_image"
-          />
-        <div class="section-newsletter_content" id="Newsletter">
-         <h2 class="heading-primary-long">Get your weekly dose of nature</h2>
-          <p class="section-newsletter_text"> Learn about plants and essential oils. Tips, news, and recipes delivered right to your inbox!
-          </p>
-          <div class="content">
-              <form class="subscription" action="https://formspree.io/f/xqknbzep" method="POST">
-                <input name="email" class="add-email" type="email" placeholder="subscribe@me.now" required>
-                <input type="text" name="_gotcha" class="form_input" />
-                <button class="submit-email" type="submit" id="submit_newsletter" onsubmit="submitNewsletter();">
-                  <span class="before-submit">Subscribe</span>
-                  <span class="after-submit">Thank you for subscribing!</span>
-                 </button>
-              </form>
-          </div>
-        </div>
-
-      </div>
-    </section>
+    <newsletter-component></newsletter-component>
     <section class="section-blog">
       <div class="section-blog_container" id="HomeBlog">
         <div class="section-blog_title heading-primary-long" id="section-blog_title_first">
@@ -487,129 +467,11 @@
             >Contact me</a>
         </div>
     </section>
-    <footer class="footer">
-      <div class="footer_container">
-        <div class="footer_boxes footer_boxes_firstline">
-          <ol>
-            <li class="footer_boxes_text">
-              <a href="#Home">
-              Home</a>
-            </li>
-            <li class="footer_boxes_text">
-              <a href="#HowItWorks">
-              How it works</a>
-            </li>
-            <li class="footer_boxes_text">
-              <a href="#AboutMe">
-              About me</a>
-            </li>
-          </ol>
-        </div>
-        <div class="footer_boxes footer_boxes_secondline">
-          <ol>
-            <li class="footer_boxes_text">
-              <a href="#Newsletter">
-              Newsletter</a>
-            </li>
-            <li class="footer_boxes_text">
-              <span class="footer_boxes_text_consultation" onclick="consultationPopup()">
-              Consultation</span>
-            </li>
-            <li class="footer_boxes_text">
-              <a href="#HomeBlog">
-              Blog</a>
-            </li>
-          </ol>
-        </div>
-        <div>
-            <div class="footer_boxes footer_boxes_thirdline">
-              <a href="mailto:info@newdawnaromatics.com">
-                <ion-icon
-                  name="mail-open"
-                  alt="E-Mail Icon"
-                  class="section-about_icon section-about_icon_mail">
-              </ion-icon>
-              </a>
-              <a href="https://www.facebook.com/newdawnaromatics/">
-                <ion-icon
-                  name="logo-facebook"
-                  alt="Facebook Icon"
-                  class="section-about_icon section-about_icon_facebook">
-              </ion-icon>
-              </a>
-              <a href="https://www.youtube.com/channel/UCQNhPQ_ErNPKXLUr44VSEzg">
-                <ion-icon
-                  name="logo-youtube"
-                  alt="Youtube Icon"
-                  class="section-about_icon section-about_icon_youtube">
-                </ion-icon>
-              </a>
-              <a href="https://www.instagram.com/newdawnaromatics/">
-                <ion-icon
-                  name="logo-instagram"
-                  alt="Instagram Icon"
-                  class="section-about_icon section-about_icon_instagram">
-                </ion-icon>
-              </a>
-            </div>
-          <span class="footer_boxes_text">
-            <a href="tel:(770)335-5628">(770) 335-5628</a>
-          </span>
-        </div>
-      </div>
-    </footer>
-    <section class="section-disclaimer" id="section-disclaimer">
-      <ol class="section-disclaimer_text">
-        <li>&copy; Copyright 2022 - All rights reserved</li>
-        <li>Built with care by WestHousePros</li>
-        <li><span class="section-disclaimer_link" onclick="disclaimerPopup()">Read our disclaimer here</span></li>
-      </ol>
-      <div class="section-disclaimer_popup" id="disclaimer_popup">
-        <div class="section-disclaimer_popup_header"> Disclaimers and Privacy Policy </div>
-          <ion-icon
-            name="close-outline"
-            alt="X Close Button"
-            class="section-disclaimer_popup_icon_close"
-            id="disclaimer_close"
-            onclick="disclaimerPopupClose()">
-          </ion-icon>
-          <div class="section-disclaimer_popup_text"><p>Health Disclaimer - Clinical Aromatherapists are not doctors and do not diagnose or treat conditions. Rather we use essential oils and herbs to support the body. When used as part of a holistic lifestyle they can assist in greater health, well being and quality of life. Good health is our own personal responsibility and the final decision on any recommendation made is always yours. This should empower each of us knowing that we can make decisions everyday that can impact our health in a positive way. This site is for informational purposes only, and is not to be used or relied on for any diagnostic or treatment purposes. This is not a replacement for seeking medical attention.</p>
-          <p>Privacy Policy - This website uses google analytics and cookies to identify where our readers are visiting from, and if they’ve been here previously so we can best serve our audience. We allow people to sign-up for our email newsletter, and your email will only be used for this purpose. Anyone who signs up to our email list can unsubscribe if they choose to leave.
-            By using our website you are accepting the use of cookies on our site. If you sign up for our programs or email newsletter you will need to confirm that you’re human and that you agree to these terms.</p>
-        </p></div>
-      </div>
-    </section>
-    <section class="section-consultation">
-      <div id="consultation_popup" class="section-consultation_popup">
-        <h2 class="section-consultation_form_title">Take a step towards better health!</h2>
-        <div class="section-consultation_forms">
-          <form id="ConsultationForm" action="https://formspree.io/f/mbjwygwk" method="POST">
-            <input name="Name" class="section-consultation_form" placeholder="Your Name" type="text" required />
-            <input name="Email" class="section-consultation_form" placeholder="Email" type="email" required />
-            <input name="Phone Number" class="section-consultation_form" placeholder="Phone Number" type="tel" required />
-            <textarea name="Additional Input" class="section-consultation_form" placeholder="Share With Us"></textarea>
-            <input type="text" name="_gotcha" class="form_input" />
-            <div class="section-consultation_checkbox">
-              <input name="Newsletter Signup" class="section-consultation_checkbox_box" type="checkbox" />
-              <span>Sign up for our Newsletter!</span> 
-            </div>
-          </form>
-        </div>
-        <input id="consultation_submit" onsubmit="consultationThankYou()" form="ConsultationForm" class="btn-small btn-small--green section-consultation_btn" type="submit" />
-        <span id="consultation_ty" class="section-consultation_ty">Thank you! Look forward to meeting you</span>
-          <h2 class="section-consultation_info_title">What happens next?</h2>
-          <div class="section-consultation_text">
-            <p class="section-consultation_text_line">You will be contacted to set up a consultation time that works best for you.</p>
-            <p class="section-consultation_text_line">1½ - 2 Hour Consultation - $150</p>
-            <p class="section-consultation_text_line">Consultations are currently conducted via zoom.</p>
-            <p class="section-consultation_text_line">Want to see if this is a good fit for you? Request a 15 minute complimentary introduction so we can get to know each other. </p>
-          </div>
-          <button class="btn-small btn-small--green-white section-consultation_btn2" onclick="consultationPopupClose()">Close</button>
-
-      </div>
-    </section>
+    <footer-component></footer-component>
+    <disclaimer-component></disclaimer-component>
+    <consultation-component></consultation-component>
     <script src="js/script.js"></script>
-    <script>window.onload = originalDisplay;</script>
+    <script>window.onload = homeDisplay;</script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   </body>

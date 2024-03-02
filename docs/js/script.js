@@ -1,6 +1,12 @@
-function originalDisplay() {
+function homeDisplay() {
   document.getElementById("section-blog_content_first").style.display =
-    "inline-block";
+  "inline-block";
+  document.getElementById("disclaimer_popup").style.visibility = 'hidden';
+  document.getElementById("consultation_popup").style.visibility = 'hidden';
+  document.getElementById("consultation_ty").style.visibility = 'hidden';
+}
+
+function reusableDisplay() {
   document.getElementById("disclaimer_popup").style.visibility = 'hidden';
   document.getElementById("consultation_popup").style.visibility = 'hidden';
   document.getElementById("consultation_ty").style.visibility = 'hidden';
@@ -50,8 +56,6 @@ function readMore() {
     moreTextSecond.style.display = "inline";
   }
 }
-
-// TODO - ADD MOBILE TOUCH EVENT
 
 function navMenu() {
   const openMenu = document.getElementById("header_menuopen");

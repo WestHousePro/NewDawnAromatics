@@ -152,7 +152,7 @@ ion-icon {
     color: #eee;
     overflow: auto;
     opacity: 0;
-    background-image: linear-gradient(to right, rgba(102, 102, 102, 0) 48%, #f6b519 50%, rgba(54, 210, 120, 0.5) 52%, rgba(54, 210, 120, 0.5)), url(../img/trees_popup_background.webp);
+    background-image: linear-gradient(to right, rgba(102, 102, 102, 0) 48%, #f6b519 50%, rgba(54, 210, 120, 0.5) 52%, rgba(54, 210, 120, 0.5)), url(/img/trees_popup_background.webp);
     background-size: cover;
     background-position: bottom; }
   .section-consultation_form_title {
@@ -255,7 +255,7 @@ ion-icon {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, auto);
-    background-image: url(../img/trees_popup_background.webp); }
+    background-image: url(/img/trees_popup_background.webp); }
   .section-consultation_form_title {
     grid-column-start: 1;
     grid-column-end: 2;
@@ -304,7 +304,7 @@ ion-icon {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 3fr 2fr;
   height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/main_background.webp);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/main_background.webp);
   background-size: cover;
   background-position: top; }
   .header__logo-box {
@@ -404,11 +404,13 @@ ion-icon {
     .footer_boxes_text {
       color: #f7f7f7; }
     .footer_boxes_thirdline {
-      display: flex;
-      justify-content: space-between; }
+      display: flex; }
   .footer_boxes_text:hover {
     color: #0a0a0a;
     cursor: pointer; }
+
+.icon_padding_right {
+  padding-right: 1rem; }
 
 @media (max-width: 1140px) {
   .footer_container {
@@ -507,10 +509,10 @@ ion-icon {
   .section-about_links {
     display: flex;
     justify-content: space-between; }
-  .section-about_icon_facebook:hover {
-    color: #4267B2; }
   .section-about_icon_mail:hover {
     color: #27ae60; }
+  .section-about_icon_facebook:hover {
+    color: #4267B2; }
   .section-about_icon_youtube:hover {
     color: #FF0000; }
   .section-about_icon_instagram:hover {
@@ -645,7 +647,22 @@ ion-icon {
     .section-blog_moreblogs_list {
       justify-self: center;
       cursor: pointer;
-      padding-bottom: 2rem; }
+      padding: 1rem; }
+      .section-blog_moreblogs_list_first {
+        background-color: #eee;
+        border-style: solid;
+        border-color: #27ae60;
+        margin-bottom: 1rem; }
+      .section-blog_moreblogs_list_second {
+        background-color: #eee;
+        border-style: solid;
+        border-color: #27ae60;
+        margin-bottom: 1rem; }
+      .section-blog_moreblogs_list_third {
+        background-color: #eee;
+        border-style: solid;
+        border-color: #27ae60;
+        margin-bottom: 1rem; }
       .section-blog_moreblogs_list_photos {
         width: 100%;
         margin-bottom: 1rem;
@@ -1121,6 +1138,12 @@ body {
   font-size: 3.5rem;
   font-weight: 400;
   word-spacing: 0.4rem; }
+  .heading-primary-long-underline::after {
+    content: "";
+    display: block;
+    max-width: 70%;
+    border-bottom: 0.3rem solid #36d278;
+    margin: 1rem auto; }
 
 .heading-secondary {
   text-transform: uppercase;
@@ -1161,3 +1184,150 @@ body {
     letter-spacing: 1.3rem; }
   .header-heading-primary--sub {
     letter-spacing: .3rem; } }
+
+.blogheader {
+  display: grid;
+  grid-gap: 6rem;
+  grid-template-columns: 1fr 1fr; }
+  .blogheader__logo-box {
+    margin-top: 6rem;
+    margin-left: 6rem;
+    height: 18rem;
+    width: 18rem; }
+  .blogheader__logo {
+    height: 100%; }
+
+.unsubscribeheader {
+  display: grid;
+  grid-gap: 6rem;
+  grid-template-columns: 1fr 1fr; }
+  .unsubscribeheader__logo-box {
+    margin-top: 6rem;
+    margin-left: 6rem;
+    height: 18rem;
+    width: 18rem; }
+  .unsubscribeheader__logo {
+    height: 100%; }
+
+@media (max-width: 1140px) {
+  .unsubscribeheader__logo {
+    height: 12rem; } }
+
+@media (max-width: 700px) {
+  .unsubscribeheader {
+    row-gap: 4rem;
+    column-gap: 2rem; } }
+
+@media (max-width: 500px) {
+  .unsubscribeheader {
+    row-gap: 3rem;
+    column-gap: 1rem; } }
+
+.section-unsubscribe {
+  background-color: #f3f2f2;
+  padding-bottom: 6rem;
+  position: relative;
+  z-index: 5; }
+  .section-unsubscribe_container {
+    overflow: hidden;
+    position: relative;
+    width: 114rem;
+    margin: 0 auto;
+    margin-top: 6rem; }
+  .section-unsubscribe_image {
+    opacity: 0.1;
+    filter: blur(0.1rem) saturate(150%);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto; }
+  .section-unsubscribe_content {
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-bottom: 2rem; }
+  .section-unsubscribe_text {
+    text-align: center; }
+
+.content {
+  width: 36rem;
+  height: 4rem;
+  box-shadow: 0.2rem 0.4rem 1rem rgba(0, 0, 0, 0.2);
+  border-radius: 6rem;
+  overflow: hidden;
+  margin: auto;
+  margin-top: 2rem; }
+
+.subscription {
+  position: relative;
+  width: 100%;
+  height: 100%; }
+
+.subscription .add-email {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  padding: 0 2rem; }
+
+.subscription .submit-email {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: calc(100% - 0.2rem);
+  width: 10rem;
+  border: none;
+  border-radius: 6rem;
+  outline: none;
+  margin: 0.1rem;
+  padding: 0 2rem;
+  cursor: pointer;
+  background: #f6b519;
+  color: #f7f7f7;
+  transition: width 0.35s ease-in-out, background 0.35s ease-in-out; }
+
+.subscription.done .submit-email {
+  width: calc(100% - 0.2rem);
+  background: #36d278; }
+
+.subscription .submit-email .before-submit,
+.subscription .submit-email .after-submit {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 3.8rem;
+  transition: visibility 0.35s ease-in-out, opacity 0.35s ease-in-out; }
+
+.subscription.done .submit-email .before-submit,
+.subscription:not(.done) .submit-email .after-submit {
+  visibility: hidden;
+  opacity: 0; }
+
+.subscription .submit-email .after-submit {
+  transition-delay: 0.35s; }
+
+.subscription:not(.done) .submit-email .before-submit,
+.subscription.done .submit-email .after-submit {
+  visibility: visible;
+  opacity: 1; }
+
+@media (max-width: 1140px) {
+  .section-unsubscribe_container {
+    width: 100%; } }
+
+@media (max-width: 550px) {
+  .section-unsubscribe_content {
+    width: 90%;
+    padding-bottom: 2rem; }
+  .content {
+    width: 100%;
+    height: 4rem; } }
