@@ -404,11 +404,13 @@ ion-icon {
     .footer_boxes_text {
       color: #f7f7f7; }
     .footer_boxes_thirdline {
-      display: flex;
-      justify-content: space-between; }
+      display: flex; }
   .footer_boxes_text:hover {
     color: #0a0a0a;
     cursor: pointer; }
+
+.icon_padding_right {
+  padding-right: 1rem; }
 
 @media (max-width: 1140px) {
   .footer_container {
@@ -645,7 +647,22 @@ ion-icon {
     .section-blog_moreblogs_list {
       justify-self: center;
       cursor: pointer;
-      padding-bottom: 2rem; }
+      padding: 1rem; }
+      .section-blog_moreblogs_list_first {
+        background-color: #eee;
+        border-style: solid;
+        border-color: #27ae60;
+        margin-bottom: 1rem; }
+      .section-blog_moreblogs_list_second {
+        background-color: #eee;
+        border-style: solid;
+        border-color: #27ae60;
+        margin-bottom: 1rem; }
+      .section-blog_moreblogs_list_third {
+        background-color: #eee;
+        border-style: solid;
+        border-color: #27ae60;
+        margin-bottom: 1rem; }
       .section-blog_moreblogs_list_photos {
         width: 100%;
         margin-bottom: 1rem;
@@ -1171,24 +1188,40 @@ body {
 .blogheader {
   display: grid;
   grid-gap: 6rem;
-  grid-template-columns: 1fr 4fr 1fr; }
+  grid-template-columns: 1fr 1fr; }
   .blogheader__logo-box {
-    position: relative;
     margin-top: 6rem;
-    margin-left: 6rem; }
+    margin-left: 6rem;
+    height: 18rem;
+    width: 18rem; }
   .blogheader__logo {
-    height: 18rem; }
+    height: 100%; }
 
 .unsubscribeheader {
   display: grid;
   grid-gap: 6rem;
-  grid-template-columns: 1fr; }
+  grid-template-columns: 1fr 1fr; }
   .unsubscribeheader__logo-box {
-    position: relative;
     margin-top: 6rem;
-    margin-left: 6rem; }
+    margin-left: 6rem;
+    height: 18rem;
+    width: 18rem; }
   .unsubscribeheader__logo {
-    height: 18rem; }
+    height: 100%; }
+
+@media (max-width: 1140px) {
+  .unsubscribeheader__logo {
+    height: 12rem; } }
+
+@media (max-width: 700px) {
+  .unsubscribeheader {
+    row-gap: 4rem;
+    column-gap: 2rem; } }
+
+@media (max-width: 500px) {
+  .unsubscribeheader {
+    row-gap: 3rem;
+    column-gap: 1rem; } }
 
 .section-unsubscribe {
   background-color: #f3f2f2;
@@ -1288,11 +1321,11 @@ body {
   opacity: 1; }
 
 @media (max-width: 1140px) {
-  .section-newsletter_container {
+  .section-unsubscribe_container {
     width: 100%; } }
 
 @media (max-width: 550px) {
-  .section-newsletter_content {
+  .section-unsubscribe_content {
     width: 90%;
     padding-bottom: 2rem; }
   .content {

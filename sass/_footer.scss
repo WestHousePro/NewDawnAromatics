@@ -22,7 +22,6 @@
 
     &_thirdline{
       display: flex;
-      justify-content: space-between;
     }
   }
 
@@ -30,6 +29,10 @@
     color: $color-black;
     cursor: pointer;
   }
+}
+
+.icon_padding_right{
+  padding-right: 1rem;
 }
 
 @media (max-width: 1140px) {

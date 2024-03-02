@@ -1,16 +1,39 @@
 .unsubscribeheader {
   display: grid;
   grid-gap: $gutter-gap;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
 
   &__logo-box {
-    position: relative;
     margin-top: 6rem;
     margin-left: 6rem;
+    height: 18rem;
+    width: 18rem;
   }
 
   &__logo {
-    height: 18rem;
+    height: 100%;
+  }
+}
+
+@media (max-width: 1140px){
+  .unsubscribeheader {
+    &__logo {
+      height: 12rem;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .unsubscribeheader {
+    row-gap: 4rem;
+    column-gap: 2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .unsubscribeheader {
+    row-gap: 3rem;
+    column-gap: 1rem;
   }
 }
 
@@ -130,7 +153,7 @@
   }
   
   @media (max-width: 1140px) {
-    .section-newsletter {
+    .section-unsubscribe {
       &_container {
         width: 100%;
       }
@@ -138,7 +161,7 @@
   }
   
   @media (max-width: 550px) {
-    .section-newsletter {
+    .section-unsubscribe {
   
       &_content {
         width: 90%;

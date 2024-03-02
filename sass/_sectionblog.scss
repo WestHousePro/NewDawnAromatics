@@ -61,7 +61,28 @@
     &_list {
       justify-self: center;
       cursor: pointer;
-      padding-bottom: 2rem;
+      padding: 1rem;
+
+      &_first {
+        background-color: $color-grey-light-3;
+        border-style: solid;
+        border-color: $color-primary;
+        margin-bottom: 1rem;
+      }
+
+      &_second {
+        background-color: $color-grey-light-3;
+        border-style: solid;
+        border-color: $color-primary;
+        margin-bottom: 1rem;
+      }
+
+      &_third {
+        background-color: $color-grey-light-3;
+        border-style: solid;
+        border-color: $color-primary;
+        margin-bottom: 1rem;
+      }
 
       &_photos {
         width: 100%;

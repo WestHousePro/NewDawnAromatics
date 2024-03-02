@@ -13,7 +13,7 @@ class Unsubscribe extends HTMLElement {
             />
           <div class="section-unsubscribe_content">
            <h2 class="heading-primary-long">Unsubscribe</h2>
-            <p class="section-unsubscribe_text"> Sad to see you go! Please enter your email to unsubscribe
+            <p class="section-unsubscribe_text"> Sad to see you go! Enter your email to unsubscribe.
             </p>
             <div class="content">
                 <form class="subscription" action="https://formspree.io/f/mdoqzjkb" method="POST">

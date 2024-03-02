@@ -1,15 +1,16 @@
 .blogheader {
   display: grid;
   grid-gap: $gutter-gap;
-  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-columns: 1fr 1fr;
 
   &__logo-box {
-    position: relative;
     margin-top: 6rem;
     margin-left: 6rem;
+    height: 18rem;
+    width: 18rem;
   }
 
   &__logo {
-    height: 18rem;
+    height: 100%;
   }
 }

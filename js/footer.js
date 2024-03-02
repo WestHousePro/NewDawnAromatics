@@ -44,21 +44,21 @@ class Footer extends HTMLElement {
                 <ion-icon
                   name="mail-open"
                   alt="E-Mail Icon"
-                  class="section-about_icon section-about_icon_mail">
+                  class="section-about_icon section-about_icon_mail icon_padding_right">
               </ion-icon>
               </a>
               <a href="https://www.facebook.com/newdawnaromatics/">
                 <ion-icon
                   name="logo-facebook"
                   alt="Facebook Icon"
-                  class="section-about_icon section-about_icon_facebook">
+                  class="section-about_icon section-about_icon_facebook icon_padding_right">
               </ion-icon>
               </a>
               <a href="https://www.youtube.com/channel/UCQNhPQ_ErNPKXLUr44VSEzg">
                 <ion-icon
                   name="logo-youtube"
                   alt="Youtube Icon"
-                  class="section-about_icon section-about_icon_youtube">
+                  class="section-about_icon section-about_icon_youtube icon_padding_right">
                 </ion-icon>
               </a>
               <a href="https://www.instagram.com/newdawnaromatics/">
